@@ -111,7 +111,7 @@
         <!-- 評分操作區 (正下方整合式控制列) -->
         <div class="action-dock">
           
-          <!-- 正面狀態操作列：翻面按鈕 + 左右箭頭 -->
+          <!-- 正面狀態操作列：翻面按鈕 + 左右大箭頭 -->
           <div id="dock-front" class="dock-row">
             <button id="prev-btn" class="nav-arrow-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
               ‹
@@ -125,11 +125,8 @@
             </button>
           </div>
 
-          <!-- 背面狀態評分列：三大莫蘭迪實體按鈕 + 左右箭頭 -->
-          <div id="dock-back" class="dock-row hidden">
-            <button id="dock-back-prev-btn" class="nav-arrow-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
-              ‹
-            </button>
+          <!-- 背面狀態評分列：三大評分按鈕 + 獨立導覽列 -->
+          <div id="dock-back" class="dock-back-group hidden">
             <div class="rating-button-group">
               <button id="grade-hard-btn" class="rate-btn rate-hard" title="歸入不熟池，未來高頻再次出現">
                 <span class="rate-dot dot-hard"></span>
@@ -147,9 +144,14 @@
                 <span class="rate-sub">永久畢業</span>
               </button>
             </div>
-            <button id="dock-back-next-btn" class="nav-arrow-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
-              ›
-            </button>
+            <div class="back-nav-row">
+              <button id="dock-back-prev-btn" class="nav-arrow-btn nav-wide-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
+                <span class="nav-arrow-symbol">‹</span> 上一題
+              </button>
+              <button id="dock-back-next-btn" class="nav-arrow-btn nav-wide-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
+                下一題 <span class="nav-arrow-symbol">›</span>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -171,14 +173,12 @@
               <button id="btn-draw-next-10" class="btn-primary-action">
                 🚀 提前再抽 10 個單字
               </button>
-              <div class="completion-sub-buttons">
-                <button id="btn-review-today-again" class="btn-secondary-action">
-                  🔁 重新複習今日單字
-                </button>
-                <button id="btn-goto-stats" class="btn-secondary-action">
-                  📊 查看單字庫統計
-                </button>
-              </div>
+              <button id="btn-review-today-again" class="btn-secondary-action">
+                🔁 重新複習今日單字
+              </button>
+              <button id="btn-goto-stats" class="btn-secondary-action">
+                📊 查看單字庫統計
+              </button>
             </div>
           </div>
         </div>

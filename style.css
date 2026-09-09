@@ -53,6 +53,9 @@
 html, body {
   width: 100%;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: auto;
+  overscroll-behavior: none;
 }
 
 body {
@@ -280,6 +283,7 @@ body {
   width: 100%;
   height: 440px; /* 從 360px 提升至 440px，容納大字體且不擁擠 */
   perspective: 1200px;
+  touch-action: pan-y;
 }
 
 .flashcard {
@@ -291,6 +295,7 @@ body {
   cursor: pointer;
   border-radius: var(--radius-card);
   outline: none;
+  touch-action: pan-y;
 }
 
 .flashcard:focus-visible {
@@ -319,6 +324,7 @@ body {
   justify-content: space-between;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   user-select: none;
+  touch-action: pan-y;
 }
 
 .flashcard:hover .card-face {
@@ -519,33 +525,86 @@ body {
   display: none !important;
 }
 
-/* 次要控制項：左右箭頭 */
+/* 次要控制項：左右大按鍵 */
 .nav-arrow-btn {
-  width: 56px;
+  width: 66px;
+  min-width: 66px;
   height: 56px;
   border-radius: var(--radius-button);
-  border: 1px solid var(--slate-200);
-  background: #ffffff;
-  color: var(--slate-600);
-  font-size: 1.4rem; /* 放大箭頭 */
-  font-weight: 600;
+  border: 1.5px solid var(--slate-200);
+  background: var(--slate-100);
+  color: var(--slate-800);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.15s ease;
   flex-shrink: 0;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .nav-arrow-btn:hover:not(:disabled) {
   border-color: var(--slate-300);
-  background: var(--slate-50);
+  background: var(--slate-200);
   color: var(--slate-900);
 }
 
+.nav-arrow-btn:active:not(:disabled) {
+  transform: scale(0.92);
+  background: var(--slate-300);
+}
+
 .nav-arrow-btn:disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: not-allowed;
+}
+
+/* 背面專屬：上下題寬版按鍵 (超好按大按鈕) */
+.nav-wide-btn {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+  height: 52px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  gap: 8px;
+  background: var(--slate-50);
+  border: 1.5px solid var(--slate-200);
+  color: var(--slate-700);
+}
+
+.nav-wide-btn:hover:not(:disabled), .nav-wide-btn:active:not(:disabled) {
+  background: var(--slate-100);
+  border-color: var(--slate-300);
+  color: var(--slate-900);
+}
+
+.nav-arrow-symbol {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+/* 背面操作群組容器 (評級列 + 導覽列雙層排版) */
+.dock-back-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.dock-back-group.hidden {
+  display: none !important;
+}
+
+.back-nav-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
 }
 
 /* 正面主按鈕：Slate 900 質感翻面鍵 (大文字) */
@@ -779,45 +838,59 @@ body {
 .completion-buttons {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-width: 400px;
+  gap: 14px;
+  max-width: 460px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .btn-primary-action {
-  height: 52px;
+  width: 100%;
+  height: 56px;
   border-radius: var(--radius-button);
   background: var(--slate-900);
   color: #ffffff;
   border: none;
   font-family: inherit;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.btn-primary-action:hover {
-  background: var(--slate-800);
-}
-
-.completion-sub-buttons {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  touch-action: manipulation;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.btn-primary-action:hover, .btn-primary-action:active {
+  background: var(--slate-800);
+  transform: translateY(-1px);
 }
 
 .btn-secondary-action {
-  flex: 1;
-  height: 48px;
+  width: 100%;
+  height: 54px;
   border-radius: var(--radius-button);
   background: var(--slate-50);
-  border: 1px solid var(--slate-200);
-  color: var(--slate-700);
+  border: 1.5px solid var(--slate-200);
+  color: var(--slate-800);
   font-family: inherit;
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.15s ease;
+  touch-action: manipulation;
+}
+
+.btn-secondary-action:hover, .btn-secondary-action:active {
+  background: var(--slate-100);
+  border-color: var(--slate-300);
+  color: var(--slate-900);
+  transform: translateY(-1px);
 }
 
 .btn-secondary-action:hover {
@@ -1121,28 +1194,26 @@ body {
     line-height: 1.45;
   }
 
-  /* 底部操作欄：箭頭加大方便拇指觸控，防止誤觸雙擊放大 */
+  /* 底部操作欄：正面左右箭頭超大好按，背面雙層排版寬版按鍵 */
   .dock-row {
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav-arrow-btn {
-    width: 50px;
-    min-width: 50px;
-    height: 52px;
-    font-size: 1.75rem;
+    width: 64px;
+    min-width: 64px;
+    height: 56px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 1;
-    border-radius: 12px;
+    border-radius: 14px;
     background: var(--slate-100);
-    border: 1px solid var(--slate-200);
+    border: 1.5px solid var(--slate-200);
     color: var(--slate-800);
     display: flex;
     align-items: center;
     justify-content: center;
     touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
   }
 
   .nav-arrow-btn:active:not(:disabled) {
@@ -1150,11 +1221,37 @@ body {
     transform: scale(0.92);
   }
 
-  .btn-primary-flip {
+  .nav-wide-btn {
+    flex: 1;
+    width: auto;
+    min-width: 0;
     height: 52px;
     font-size: 1.05rem;
+    font-weight: 700;
+    gap: 8px;
+    background: var(--slate-50);
+    border: 1.5px solid var(--slate-200);
+    color: var(--slate-800);
+  }
+
+  .dock-back-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .back-nav-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn-primary-flip {
+    height: 56px;
+    font-size: 1.1rem;
     padding: 0 12px;
-    border-radius: 12px;
+    border-radius: 14px;
     gap: 6px;
     touch-action: manipulation;
   }
@@ -1164,24 +1261,27 @@ body {
   }
 
   .rating-button-group {
-    gap: 6px;
+    gap: 8px;
+    width: 100%;
   }
 
   .rate-btn {
-    height: 52px;
-    padding: 2px 4px;
+    height: 54px;
+    padding: 4px 6px;
     border-radius: 12px;
     touch-action: manipulation;
   }
 
   .rate-title {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     white-space: nowrap;
     font-weight: 800;
   }
 
   .rate-sub {
-    display: none; /* 隱藏次要副標題，讓三大評分按鈕乾淨並排 */
+    font-size: 0.72rem;
+    white-space: nowrap;
+    display: block; /* 在專屬評分列上寬度足夠，可清楚呈現副標題 */
   }
 
   /* 手機版完全移除鍵盤快捷鍵說明列 */
@@ -1204,11 +1304,6 @@ body {
     flex-wrap: wrap;
     gap: 8px;
   }
-
-  .completion-sub-buttons {
-    flex-direction: column;
-    gap: 8px;
-  }
 }
 
 /* 超窄螢幕 iPhone SE (寬度 <= 380px) 極致緊湊優化 */
@@ -1218,28 +1313,37 @@ body {
   }
 
   .dock-row {
-    gap: 5px;
+    gap: 6px;
   }
 
   .nav-arrow-btn {
-    width: 44px;
-    min-width: 44px;
-    height: 48px;
-    font-size: 1.5rem;
+    width: 52px;
+    min-width: 52px;
+    height: 50px;
+    font-size: 1.8rem;
   }
 
-  .btn-primary-flip {
+  .nav-wide-btn {
     height: 48px;
     font-size: 0.95rem;
   }
 
+  .btn-primary-flip {
+    height: 50px;
+    font-size: 1rem;
+  }
+
   .rate-btn {
-    height: 48px;
+    height: 50px;
     padding: 2px 2px;
   }
 
   .rate-title {
-    font-size: 0.84rem;
+    font-size: 0.88rem;
+  }
+
+  .rate-sub {
+    display: none;
   }
 
   .nav-pill {

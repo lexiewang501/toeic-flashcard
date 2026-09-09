@@ -556,37 +556,49 @@ function bindEvents() {
     });
   });
 
-  // 手機滑動切換卡片手勢支援 (Swipe to Switch Cards)
+  // 手機滑動切換卡片手勢支援 (零畫面回彈與跑版)
   let touchStartX = 0;
   let touchStartY = 0;
   let isSwiping = false;
 
   dom.flashcard.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].clientX;
-    touchStartY = e.changedTouches[0].clientY;
+    if (!e.touches || e.touches.length === 0) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
     isSwiping = false;
   }, { passive: true });
 
   dom.flashcard.addEventListener('touchmove', (e) => {
-    const currentX = e.changedTouches[0].clientX;
-    const currentY = e.changedTouches[0].clientY;
-    if (Math.abs(currentX - touchStartX) > 12 || Math.abs(currentY - touchStartY) > 12) {
+    if (!e.touches || e.touches.length === 0 || !touchStartX) return;
+    const currentX = e.touches[0].clientX;
+    const currentY = e.touches[0].clientY;
+    const diffX = currentX - touchStartX;
+    const diffY = currentY - touchStartY;
+
+    // 當檢測到水平滑動趨勢時，阻止瀏覽器原生左右整頁橡皮筋滑動
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 8) {
+      if (e.cancelable) {
+        e.preventDefault(); // 核心：阻止整個畫面跟著跑動！
+      }
       isSwiping = true;
     }
-  }, { passive: true });
+  }, { passive: false });
 
   dom.flashcard.addEventListener('touchend', (e) => {
+    if (!touchStartX) return;
     const touchEndX = e.changedTouches[0].clientX;
     const touchEndY = e.changedTouches[0].clientY;
     const diffX = touchEndX - touchStartX;
     const diffY = touchEndY - touchStartY;
-    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 35) {
       if (diffX < 0) {
         nextCard(); // 向左滑：下一題
       } else {
         prevCard(); // 向右滑：上一題
       }
     }
+    touchStartX = 0;
+    touchStartY = 0;
   }, { passive: true });
 
   dom.flashcard.addEventListener('click', (e) => {
