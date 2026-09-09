@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多益 750–900 智能字卡</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-wrapper">
+    <!-- 整合型中央主卡片容器 (max-width: 680px) -->
+    <div class="integrated-card">
+      
+      <!-- 頂部簡潔導覽列 -->
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-badge">TOEIC</span>
+          <span class="brand-title">750–900 核心字卡</span>
+        </div>
+        <nav class="nav-pills">
+          <button id="tab-quiz-btn" class="nav-pill active" data-tab="quiz">今日單字</button>
+          <button id="tab-stats-btn" class="nav-pill" data-tab="stats">學習統計</button>
+          <button id="tab-starred-btn" class="nav-pill" data-tab="starred">收藏清單</button>
+        </nav>
+      </header>
+
+      <!-- 視圖一：今日單字測驗 -->
+      <section id="quiz-view" class="view-panel active">
+        
+        <!-- 今日進度條 -->
+        <div class="progress-container">
+          <div class="progress-meta">
+            <span id="session-date-badge" class="session-date">今日任務</span>
+            <span id="card-counter" class="card-counter">1 / 10</span>
+          </div>
+          <div class="progress-track">
+            <div id="progress-bar-fill" class="progress-fill" style="width: 10%;"></div>
+          </div>
+        </div>
+
+        <!-- 3D 單字卡主體 -->
+        <div class="card-scene">
+          <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="點擊翻面">
+            
+            <!-- 卡片正面 (英文) -->
+            <div class="card-face card-front">
+              <div class="card-header-row">
+                <span id="front-pool-badge" class="pool-badge pool-unlearned">全新單字</span>
+                <div class="card-actions">
+                  <button id="front-star-btn" class="ghost-icon-btn star-btn" title="收藏" aria-label="收藏">☆</button>
+                  <button id="pronounce-btn" class="ghost-icon-btn" title="發音" aria-label="發音">🔊</button>
+                </div>
+              </div>
+
+              <div class="card-core">
+                <h1 id="front-word" class="word-heading">accommodate</h1>
+                <div id="front-phonetic" class="phonetic-heading">/əˈkɑː.mə.deɪt/</div>
+                <div class="pos-wrapper">
+                  <span id="front-pos" class="pos-badge">verb (動詞)</span>
+                </div>
+              </div>
+
+              <div class="card-footer-hint">
+                <span>點擊卡片或按空白鍵翻面</span>
+              </div>
+            </div>
+
+            <!-- 卡片背面 (中文與例句) -->
+            <div class="card-face card-back">
+              <div class="card-header-row">
+                <span id="back-pool-badge" class="pool-badge pool-unlearned">全新單字</span>
+                <div class="card-actions">
+                  <button id="back-star-btn" class="ghost-icon-btn star-btn" title="收藏" aria-label="收藏">☆</button>
+                  <button id="back-pronounce-btn" class="ghost-icon-btn" title="發音" aria-label="發音">🔊</button>
+                </div>
+              </div>
+
+              <div class="card-core back-core">
+                <h2 id="back-translation" class="meaning-heading">容納；配合；提供住宿</h2>
+                <div class="example-card">
+                  <div class="example-label">多益商務例句</div>
+                  <div id="back-example-en" class="example-en">The conference facility can accommodate up to 1,200 participants.</div>
+                  <div id="back-example-zh" class="example-zh">該會議設施最多可容納 1,200 名與會者。</div>
+                </div>
+              </div>
+
+              <div class="card-footer-hint">
+                <span>點選下方熟練度將自動跳至下一題</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 評分操作區 (正下方整合式控制列) -->
+        <div class="action-dock">
+          
+          <!-- 正面狀態操作列：翻面按鈕 + 左右箭頭 -->
+          <div id="dock-front" class="dock-row">
+            <button id="prev-btn" class="nav-arrow-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
+              ←
+            </button>
+            <button id="flip-btn" class="btn-primary-flip">
+              <span>翻面看解釋</span>
+              <kbd>Space</kbd>
+            </button>
+            <button id="next-btn" class="nav-arrow-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
+              →
+            </button>
+          </div>
+
+          <!-- 背面狀態評分列：三大莫蘭迪實體按鈕 + 左右箭頭 -->
+          <div id="dock-back" class="dock-row hidden">
+            <button id="dock-back-prev-btn" class="nav-arrow-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
+              ←
+            </button>
+            <div class="rating-button-group">
+              <button id="grade-hard-btn" class="rate-btn rate-hard" title="歸入不熟池，未來高頻再次出現">
+                <span class="rate-dot dot-hard"></span>
+                <span class="rate-title">不熟</span>
+                <span class="rate-sub">高頻複習</span>
+              </button>
+              <button id="grade-review-btn" class="rate-btn rate-review" title="歸入再複習池，未來定期出現">
+                <span class="rate-dot dot-review"></span>
+                <span class="rate-title">再複習</span>
+                <span class="rate-sub">定期複習</span>
+              </button>
+              <button id="grade-mastered-btn" class="rate-btn rate-mastered" title="歸入已掌握池，永久畢業不再出現">
+                <span class="rate-dot dot-mastered"></span>
+                <span class="rate-title">已經會了</span>
+                <span class="rate-sub">永久畢業</span>
+              </button>
+            </div>
+            <button id="dock-back-next-btn" class="nav-arrow-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
+              →
+            </button>
+          </div>
+
+        </div>
+
+        <!-- 完成結算畫面 -->
+        <div id="completion-card" class="completion-card hidden">
+          <div class="completion-inner">
+            <div class="completion-badge">任務完成</div>
+            <h2>今日 10 個單字已全部複習完成</h2>
+            <p class="completion-desc">單字狀態已同步更新至單字池，持之以恆邁向多益高分！</p>
+            
+            <div class="completion-summary-row">
+              <div class="summary-chip chip-hard">不熟：<strong id="sum-hard-count">0</strong></div>
+              <div class="summary-chip chip-review">再複習：<strong id="sum-review-count">0</strong></div>
+              <div class="summary-chip chip-mastered">已掌握：<strong id="sum-mastered-count">0</strong></div>
+            </div>
+
+            <div class="completion-buttons">
+              <button id="btn-draw-next-10" class="btn-primary-action">
+                🚀 提前再抽 10 個單字
+              </button>
+              <div class="completion-sub-buttons">
+                <button id="btn-review-today-again" class="btn-secondary-action">
+                  🔁 重新複習今日單字
+                </button>
+                <button id="btn-goto-stats" class="btn-secondary-action">
+                  📊 查看單字庫統計
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 極簡快捷鍵提示 -->
+        <div class="shortcut-hints">
+          <span class="hint-item"><kbd>Space</kbd> 翻面</span>
+          <span class="hint-dot">·</span>
+          <span class="hint-item"><kbd>1</kbd> 不熟</span>
+          <span class="hint-dot">·</span>
+          <span class="hint-item"><kbd>2</kbd> 再複習</span>
+          <span class="hint-dot">·</span>
+          <span class="hint-item"><kbd>3</kbd> 已經會了</span>
+          <span class="hint-dot">·</span>
+          <span class="hint-item"><kbd>←</kbd><kbd>→</kbd> 切換題目</span>
+        </div>
+
+      </section>
+
+      <!-- 視圖二：學習統計儀表板 -->
+      <section id="stats-view" class="view-panel">
+        <div class="stats-panel">
+          
+          <div class="stats-summary-card">
+            <div class="stats-summary-header">
+              <h3>整體精熟進度</h3>
+              <span id="mastery-percent-text" class="mastery-value">0% (0/200)</span>
+            </div>
+            <div class="stacked-track">
+              <div id="bar-seg-mastered" class="track-seg seg-mastered" style="width: 0%" title="已掌握"></div>
+              <div id="bar-seg-review" class="track-seg seg-review" style="width: 0%" title="再複習"></div>
+              <div id="bar-seg-hard" class="track-seg seg-hard" style="width: 0%" title="不熟"></div>
+              <div id="bar-seg-unlearned" class="track-seg seg-unlearned" style="width: 100%" title="未學習"></div>
+            </div>
+          </div>
+
+          <!-- 四大單字池長條圖 -->
+          <div class="pools-container">
+            
+            <div class="pool-row pool-row-unlearned">
+              <div class="pool-row-info">
+                <div class="pool-label">
+                  <span class="pool-indicator dot-unlearned"></span>
+                  <span class="pool-text">未學習新字</span>
+                </div>
+                <span id="count-unlearned" class="pool-num">200</span>
+              </div>
+              <div class="pool-bar-track">
+                <div id="bar-unlearned" class="pool-bar-fill fill-unlearned" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="pool-row pool-row-hard">
+              <div class="pool-row-info">
+                <div class="pool-label">
+                  <span class="pool-indicator dot-hard"></span>
+                  <span class="pool-text">需要加強 (不熟)</span>
+                </div>
+                <span id="count-hard" class="pool-num">0</span>
+              </div>
+              <div class="pool-bar-track">
+                <div id="bar-hard" class="pool-bar-fill fill-hard" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="pool-row pool-row-review">
+              <div class="pool-row-info">
+                <div class="pool-label">
+                  <span class="pool-indicator dot-review"></span>
+                  <span class="pool-text">定期複習</span>
+                </div>
+                <span id="count-review" class="pool-num">0</span>
+              </div>
+              <div class="pool-bar-track">
+                <div id="bar-review" class="pool-bar-fill fill-review" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="pool-row pool-row-mastered">
+              <div class="pool-row-info">
+                <div class="pool-label">
+                  <span class="pool-indicator dot-mastered"></span>
+                  <span class="pool-text">已掌握 (已畢業)</span>
+                </div>
+                <span id="count-mastered" class="pool-num">0</span>
+              </div>
+              <div class="pool-bar-track">
+                <div id="bar-mastered" class="pool-bar-fill fill-mastered" style="width: 0%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 演算法控制與重置 -->
+          <div class="stats-controls-row">
+            <button id="btn-force-reroll" class="btn-subtle">
+              🎲 立即重新抽題 (測試演算法)
+            </button>
+            <button id="btn-reset-data" class="btn-subtle btn-subtle-danger">
+              ⚠️ 重置所有學習紀錄
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 視圖三：收藏清單 -->
+      <section id="starred-view" class="view-panel">
+        <div class="starred-panel">
+          <div class="starred-panel-header">
+            <h3>⭐ 收藏生詞本</h3>
+            <span id="starred-count-label" class="starred-meta">已收藏 0 個單字</span>
+          </div>
+          <div id="starred-list" class="starred-items-list">
+            <!-- 動態生成收藏單字卡片 -->
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="words-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

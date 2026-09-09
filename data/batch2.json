@@ -1,0 +1,452 @@
+[
+  {
+    "id": 51,
+    "word": "execute",
+    "phonetic": "/ˈek.sə.kjuːt/",
+    "partOfSpeech": "verb",
+    "meaning": "簽署生效（合約）；落實執行",
+    "example": "Both corporate legal counsels met this afternoon to formally execute the partnership contract.",
+    "exampleZh": "雙方法務顧問於今天下午會面，正式簽署合約使其生效。"
+  },
+  {
+    "id": 52,
+    "word": "exemplary",
+    "phonetic": "/ɪɡˈzem.plɚ.i/",
+    "partOfSpeech": "adjective",
+    "meaning": "堪稱典範的、楷模級的",
+    "example": "The customer support division received commendation for their exemplary response times.",
+    "exampleZh": "客服部門因其堪稱典範的迅速回應時間而獲得公開表揚。"
+  },
+  {
+    "id": 53,
+    "word": "expertise",
+    "phonetic": "/ˌek.spɝːˈtiːz/",
+    "partOfSpeech": "noun",
+    "meaning": "專業知識、專門技術",
+    "example": "We rely heavily on Ms. Chen's technical expertise in enterprise database optimization.",
+    "exampleZh": "我們高度倚重陳女士在企業級資料庫最佳化方面的深厚專業知識。"
+  },
+  {
+    "id": 54,
+    "word": "fluctuation",
+    "phonetic": "/ˌflʌk.tʃuˈeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "（價格、利率）起伏波動",
+    "example": "Currency exchange rate fluctuation can impact overseas quarterly profitability forecasts.",
+    "exampleZh": "外匯匯率的波動可能會直接影響海外季度的獲利預測。"
+  },
+  {
+    "id": 55,
+    "word": "foster",
+    "phonetic": "/ˈfɑː.stɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "培養、促進（協作或創新）",
+    "example": "The open-office layout was specifically chosen to foster collaboration across product units.",
+    "exampleZh": "開放式的辦公室格局是為了促進各產品小組間更緊密的協作而特別選定的。"
+  },
+  {
+    "id": 56,
+    "word": "hierarchy",
+    "phonetic": "/ˈhaɪ.rɑːr.ki/",
+    "partOfSpeech": "noun",
+    "meaning": "企業管理層級、職級體系",
+    "example": "The company modernized its corporate hierarchy by flattening middle management layers.",
+    "exampleZh": "該企業透過精簡扁平化中階管理層，實現了現代化的組織階層轉型。"
+  },
+  {
+    "id": 57,
+    "word": "implement",
+    "phonetic": "/ˈɪm.plə.ment/",
+    "partOfSpeech": "verb",
+    "meaning": "實施、貫徹執行（政策或系統）",
+    "example": "IT operations will implement the scheduled cloud migration during the weekend window.",
+    "exampleZh": "資訊維運團隊將於週末維護時段實施既定的雲端系統移轉作業。"
+  },
+  {
+    "id": 58,
+    "word": "incorporate",
+    "phonetic": "/ɪnˈkɔːr.pɚ.eɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "納入、合併（回饋或功能）",
+    "example": "Design engineers will incorporate client feedback directly into the next software release.",
+    "exampleZh": "設計工程師將把客戶的意見回饋直接納入下一版的軟體更新中。"
+  },
+  {
+    "id": 59,
+    "word": "indispensable",
+    "phonetic": "/ˌɪn.dɪˈspen.sə.bəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "不可或缺的、至關重要的",
+    "example": "Reliable data analytics has become an indispensable tool for strategic marketing campaigns.",
+    "exampleZh": "可靠的數據分析已成為推動策略性行銷戰役不可或缺的核心工具。"
+  },
+  {
+    "id": 60,
+    "word": "initiate",
+    "phonetic": "/ɪˈnɪʃ.i.eɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "發起、啟動開展（專案）",
+    "example": "The product development lead will initiate the pilot test with fifty enterprise beta users.",
+    "exampleZh": "產品研發負責人將攜手五十位企業封測用戶正式啟動試營運測試。"
+  },
+  {
+    "id": 61,
+    "word": "innovative",
+    "phonetic": "/ˈɪn.ə.veɪ.t̬ɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "創新的、革新先進的",
+    "example": "Our research team developed an innovative packaging technique that reduces logistics waste.",
+    "exampleZh": "我們的研發團隊開發出一項能夠減少物流耗損的創新包裝技術。"
+  },
+  {
+    "id": 62,
+    "word": "integrate",
+    "phonetic": "/ˈɪn.t̬ə.ɡreɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "整合、使一體化結合",
+    "example": "The marketing team intends to integrate customer analytics into our main CRM dashboard.",
+    "exampleZh": "行銷團隊打算將客戶數據分析模組整合進我們的主CRM儀表板中。"
+  },
+  {
+    "id": 63,
+    "word": "inventory",
+    "phonetic": "/ˈɪn.vən.tɔːr.i/",
+    "partOfSpeech": "noun",
+    "meaning": "存貨、庫存盤點清單",
+    "example": "Warehouse personnel carry out an exhaustive inventory audit at the end of each fiscal month.",
+    "exampleZh": "倉儲人員在每個月底皆會進行一次詳盡的庫存盤點查核。"
+  },
+  {
+    "id": 64,
+    "word": "jeopardize",
+    "phonetic": "/ˈdʒep.ɚ.daɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "危及、損害（商譽或合作關係）",
+    "example": "Missing the agreed delivery deadline could seriously jeopardize our supplier partnership.",
+    "exampleZh": "錯過約定的交貨期限可能會嚴重危及我們與供應商的夥伴關係。"
+  },
+  {
+    "id": 65,
+    "word": "leverage",
+    "phonetic": "/ˈlev.ɚ.ɪdʒ/",
+    "partOfSpeech": "verb",
+    "meaning": "善加利用、發揮槓桿效益",
+    "example": "The sales team will leverage customer testimonials to secure more corporate contracts.",
+    "exampleZh": "業務團隊將善用顧客的好評推薦見證以爭取更多企業合約。"
+  },
+  {
+    "id": 66,
+    "word": "liability",
+    "phonetic": "/ˌlaɪ.əˈbɪl.ə.t̬i/",
+    "partOfSpeech": "noun",
+    "meaning": "負債；法定義務與法律責任",
+    "example": "The comprehensive commercial insurance policy shields our firm from third-party liability.",
+    "exampleZh": "這份全面的商業保險保單保護本公司免受第三方責任賠償的衝擊。"
+  },
+  {
+    "id": 67,
+    "word": "logistics",
+    "phonetic": "/ləˈdʒɪs.tɪks/",
+    "partOfSpeech": "noun",
+    "meaning": "物流、後勤運籌統籌",
+    "example": "Efficient freight logistics ensure uninterrupted product supply to retail distributors.",
+    "exampleZh": "高效的貨運物流管理確保了向零售經銷商供應商品的不間斷進行。"
+  },
+  {
+    "id": 68,
+    "word": "maintenance",
+    "phonetic": "/ˈmeɪn.tən.əns/",
+    "partOfSpeech": "noun",
+    "meaning": "設備保養維修、系統維護",
+    "example": "Routine factory machinery maintenance prevents costly assembly line disruptions.",
+    "exampleZh": "常規的工廠機械維護保養能預防代價高昂的產線停工中斷。"
+  },
+  {
+    "id": 69,
+    "word": "malfunction",
+    "phonetic": "/ˌmælˈfʌŋk.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "機械故障、機能運作異常",
+    "example": "An unexpected sensor malfunction triggered the automated facility safety shutdown.",
+    "exampleZh": "意外發生的感知器故障觸發了整座廠區設施的自動安全緊急停機機制。"
+  },
+  {
+    "id": 70,
+    "word": "margin",
+    "phonetic": "/ˈmɑːr.dʒɪn/",
+    "partOfSpeech": "noun",
+    "meaning": "利潤率、毛利邊際空間",
+    "example": "Consolidating raw material suppliers helped improve our gross operating profit margin.",
+    "exampleZh": "整合原料供應商有助於提升我們的營業毛利率表現。"
+  },
+  {
+    "id": 71,
+    "word": "merchandise",
+    "phonetic": "/ˈmɝː.tʃən.daɪs/",
+    "partOfSpeech": "noun",
+    "meaning": "商品、陳列貨物",
+    "example": "Promotional seasonal merchandise is showcased at the entrance of each department store.",
+    "exampleZh": "當季的促銷重點商品陳列在各百貨門市正門入口處。"
+  },
+  {
+    "id": 72,
+    "word": "monopolize",
+    "phonetic": "/məˈnɑː.pəl.aɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "獨占、壟斷市場份額",
+    "example": "Antitrust regulations prohibit large tech companies from attempting to monopolize cloud services.",
+    "exampleZh": "反壟斷法規嚴禁大型科技公司企圖獨占雲端服務市場。"
+  },
+  {
+    "id": 73,
+    "word": "morale",
+    "phonetic": "/məˈræl/",
+    "partOfSpeech": "noun",
+    "meaning": "團隊士氣、工作心態精神",
+    "example": "The executive team hosted an offsite retreat to boost employee morale after the merger.",
+    "exampleZh": "高階管理層在組織合併後舉辦了員工移地休會活動以提振團隊士氣。"
+  },
+  {
+    "id": 74,
+    "word": "negligence",
+    "phonetic": "/ˈneɡ.lə.dʒəns/",
+    "partOfSpeech": "noun",
+    "meaning": "疏忽過失、怠忽職守",
+    "example": "Safety inspectors found no evidence of professional negligence in the laboratory incident.",
+    "exampleZh": "安全督察員在實驗室事故調查中並未發現任何專業怠忽過失的跡象。"
+  },
+  {
+    "id": 75,
+    "word": "negotiate",
+    "phonetic": "/nəˈɡoʊ.ʃi.eɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "商議談判、協商條款",
+    "example": "Our lead procurement officer was able to negotiate a twelve percent bulk purchase discount.",
+    "exampleZh": "我們的主任採購官成功協商出百分之十二的大宗採購批發折扣。"
+  },
+  {
+    "id": 76,
+    "word": "niche",
+    "phonetic": "/niːʃ/",
+    "partOfSpeech": "noun",
+    "meaning": "利基市場、特定合適定位",
+    "example": "The boutique firm carved out a profitable niche offering custom cybersecurity audits.",
+    "exampleZh": "這家小型精品管顧公司透過提供客製化資安審計服務開拓了高獲利的利基市場。"
+  },
+  {
+    "id": 77,
+    "word": "nominal",
+    "phonetic": "/ˈnɑː.mə.nəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "微不足道的、象徵性的（費用）",
+    "example": "Conference attendees only pay a nominal fee to cover registration materials and lunch.",
+    "exampleZh": "研討會與會者僅需支付微不足道的象徵性費用，以補貼報到手冊與午餐成本。"
+  },
+  {
+    "id": 78,
+    "word": "notify",
+    "phonetic": "/ˈnoʊ.t̬ə.faɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "正式通知、告知通知",
+    "example": "The automated alert system will notify administrators whenever server traffic spikes.",
+    "exampleZh": "每當伺服器流量出現異常峰值時，自動警報系統便會立即發送通知給系統管理員。"
+  },
+  {
+    "id": 79,
+    "word": "obligation",
+    "phonetic": "/ˌɑː.bləˈɡeɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "義務、合約職責",
+    "example": "The contracted vendor has a legal obligation to deliver the software modules on schedule.",
+    "exampleZh": "簽約廠商負有依約定期準時交付軟體模組的法律義務。"
+  },
+  {
+    "id": 80,
+    "word": "offset",
+    "phonetic": "/ˌɑːfˈset/",
+    "partOfSpeech": "verb",
+    "meaning": "抵銷、補償平衡（成本或影響）",
+    "example": "Higher international shipping volumes helped offset rising aviation fuel charges.",
+    "exampleZh": "更高的跨國出貨量有助於抵銷持續上漲的航空燃油附加費。"
+  },
+  {
+    "id": 81,
+    "word": "omit",
+    "phonetic": "/oʊˈmɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "遺漏、忽略排除",
+    "example": "Please ensure you do not omit any mandatory tax compliance disclosures in the filing.",
+    "exampleZh": "請務必確保您在申報文件中沒有遺漏任何強制性的稅務遵循揭露事項。"
+  },
+  {
+    "id": 82,
+    "word": "ongoing",
+    "phonetic": "/ˈɑːnˌɡoʊ.ɪŋ/",
+    "partOfSpeech": "adjective",
+    "meaning": "持續進行中的、不間斷的",
+    "example": "The facility upgrade is an ongoing effort that will extend into the next fiscal calendar.",
+    "exampleZh": "這項廠區設施升級工程是一項持續進行中的計畫，將延續至下一會計年度。"
+  },
+  {
+    "id": 83,
+    "word": "optimum",
+    "phonetic": "/ˈɑːp.tə.məm/",
+    "partOfSpeech": "adjective",
+    "meaning": "最佳的、最理想的",
+    "example": "Warehouse sensors adjust temperature and humidity to maintain optimum storage conditions.",
+    "exampleZh": "庫存感知器會自動調節溫濕度以維持最理想的貨物儲存環境條件。"
+  },
+  {
+    "id": 84,
+    "word": "orchestrate",
+    "phonetic": "/ˈɔːr.kə.streɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "精心籌劃安排、縝密協調（專案或活動）",
+    "example": "The brand director orchestrated a multi-platform global launch for the new device.",
+    "exampleZh": "品牌總監精心統籌了一場針對新裝置的跨平台全球聯合發表活動。"
+  },
+  {
+    "id": 85,
+    "word": "outsource",
+    "phonetic": "/ˈaʊt.sɔːrs/",
+    "partOfSpeech": "verb",
+    "meaning": "委外承包、委託外包業務",
+    "example": "Management decided to outsource non-core IT desktop support to a specialist service provider.",
+    "exampleZh": "管理層決定將非核心的IT桌面技術支援委託給專業的外部服務商承包。"
+  },
+  {
+    "id": 86,
+    "word": "paramount",
+    "phonetic": "/ˈpær.ə.maʊnt/",
+    "partOfSpeech": "adjective",
+    "meaning": "至關重要的、首要 paramount",
+    "example": "Protecting confidential customer account credentials is of paramount importance to our bank.",
+    "exampleZh": "保護客戶機密帳戶憑證安全對本行而言具備至高無上的首要重要性。"
+  },
+  {
+    "id": 87,
+    "word": "patron",
+    "phonetic": "/ˈpeɪ.trən/",
+    "partOfSpeech": "noun",
+    "meaning": "主顧顧客、老主顧",
+    "example": "Loyal hotel patrons are rewarded with complimentary breakfast and room tier upgrades.",
+    "exampleZh": "長期光顧的忠實飯店老主顧可享有免費早餐以及房型升等的尊榮禮遇。"
+  },
+  {
+    "id": 88,
+    "word": "penetrate",
+    "phonetic": "/ˈpen.ə.treɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "打入、滲透（海外市場）",
+    "example": "Strategic regional pricing helped the consumer electronics maker penetrate the Latin American market.",
+    "exampleZh": "策略性的區域定價方針協助該消費電子製造商成功打入了拉丁美洲市場。"
+  },
+  {
+    "id": 89,
+    "word": "perseverance",
+    "phonetic": "/ˌpɝː.səˈvɪr.əns/",
+    "partOfSpeech": "noun",
+    "meaning": "毅力、堅持不懈的精神",
+    "example": "Winning that major government tender was the product of the bid team's tireless perseverance.",
+    "exampleZh": "贏得那項重大政府採購標案是投標團隊不懈努力與堅毅精神的結晶成果。"
+  },
+  {
+    "id": 90,
+    "word": "persistent",
+    "phonetic": "/pɚˈsɪs.tənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "持續存在的；堅持不懈的",
+    "example": "Despite persistent global supply chain snags, our quarterly revenue surpassed internal forecasts.",
+    "exampleZh": "儘管全球供應鏈瓶頸持續存在，我們本季度的營收表現依然超越了內部預期。"
+  },
+  {
+    "id": 91,
+    "word": "pertinent",
+    "phonetic": "/ˈpɝː.tən.ənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "相關切題的、切身相干的",
+    "example": "Please submit all pertinent financial statements prior to Friday's board meeting.",
+    "exampleZh": "請務必在週五董事會召開之前，將所有相關切題的財務報表繳交齊全。"
+  },
+  {
+    "id": 92,
+    "word": "pipeline",
+    "phonetic": "/ˈpaɪp.laɪn/",
+    "partOfSpeech": "noun",
+    "meaning": "在籌劃進行中的項目管道",
+    "example": "The business development group currently has three major enterprise deals in the pipeline.",
+    "exampleZh": "業務開發部門目前手頭上有三起正在籌劃進行中的大型企業簽約案。"
+  },
+  {
+    "id": 93,
+    "word": "pledge",
+    "phonetic": "/pledʒ/",
+    "partOfSpeech": "verb",
+    "meaning": "鄭重承諾、保證",
+    "example": "The technology giant pledged to power all global data facilities using renewable energy.",
+    "exampleZh": "這家科技巨擘鄭重承諾將全面採用綠色再生能源為全球數據中心供電。"
+  },
+  {
+    "id": 94,
+    "word": "precaution",
+    "phonetic": "/prɪˈkɑː.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "預防防範措施",
+    "example": "Factory supervisors took every safety precaution before testing the heavy hydraulic press.",
+    "exampleZh": "工廠主管在測試重型液壓機台之前採取了每一項周密的安全防範措施。"
+  },
+  {
+    "id": 95,
+    "word": "precedent",
+    "phonetic": "/ˈpres.ə.dent/",
+    "partOfSpeech": "noun",
+    "meaning": "先例、前例判例",
+    "example": "This favorable settlement sets an important legal precedent for future intellectual property disputes.",
+    "exampleZh": "這項有利的和解判決為未來的智慧財產權爭議設立了重大的法律判例先例。"
+  },
+  {
+    "id": 96,
+    "word": "preliminary",
+    "phonetic": "/prɪˈlɪm.ə.ner.i/",
+    "partOfSpeech": "adjective",
+    "meaning": "初步的、預備階段的",
+    "example": "Preliminary trial test results suggest that the energy efficiency of the prototype exceeded expectations.",
+    "exampleZh": "初步的試驗結果顯示該原型機的能源使用效率遠超出原本的預期。"
+  },
+  {
+    "id": 97,
+    "word": "premium",
+    "phonetic": "/ˈpriː.mi.əm/",
+    "partOfSpeech": "adjective",
+    "meaning": "優質高級的；額外保費",
+    "example": "Subscribers to our premium enterprise service receive round-the-clock technical hotline access.",
+    "exampleZh": "訂閱我們尊榮企業級方案的會員享有全天候二十四小時專屬技術支援服務。"
+  },
+  {
+    "id": 98,
+    "word": "preside",
+    "phonetic": "/prɪˈzaɪd/",
+    "partOfSpeech": "verb",
+    "meaning": "主持（會議或委員會）(後接 over)",
+    "example": "The managing director will preside over the international shareholder summit this morning.",
+    "exampleZh": "常務董事將於今天上午親自主持這場跨國股東年度高峰會。"
+  },
+  {
+    "id": 99,
+    "word": "prevalent",
+    "phonetic": "/ˈprev.əl.ənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "普遍流行的、廣泛常見的",
+    "example": "Flexible remote work arrangements have become increasingly prevalent across multinational corporations.",
+    "exampleZh": "彈性遠距辦公模式在各大跨國企業之間已變得愈發普遍普及。"
+  },
+  {
+    "id": 100,
+    "word": "priority",
+    "phonetic": "/praɪˈɔːr.ə.t̬i/",
+    "partOfSpeech": "noun",
+    "meaning": "當務之急、首要優先考量",
+    "example": "Resolving customer support latency has been designated as our top operational priority.",
+    "exampleZh": "徹底解決客服回應延遲問題已被列為我們當前營運上的最優先當務之急。"
+  }
+]

@@ -1,0 +1,1029 @@
+/* ==========================================================================
+   多益 750–900 智能字卡 - 重構排版與極簡質感設計系統 (放大清晰字級版)
+   ========================================================================== */
+
+:root {
+  /* Slate 色系基礎 */
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --slate-50: #f8fafc;
+
+  /* 低飽和莫蘭迪評級色系 */
+  --morandi-hard-bg: #fef2f2;
+  --morandi-hard-border: #fecaca;
+  --morandi-hard-text: #991b1b;
+  --morandi-hard-dot: #ef4444;
+
+  --morandi-review-bg: #fffbeb;
+  --morandi-review-border: #fde68a;
+  --morandi-review-text: #92400e;
+  --morandi-review-dot: #f59e0b;
+
+  --morandi-mastered-bg: #f0fdf4;
+  --morandi-mastered-border: #bbf7d0;
+  --morandi-mastered-text: #166534;
+  --morandi-mastered-dot: #22c55e;
+
+  /* 圓角與陰影規範 */
+  --radius-container: 24px;
+  --radius-card: 20px;
+  --radius-button: 14px;
+  --radius-pill: 999px;
+  
+  --shadow-container: 0 20px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.02);
+  --shadow-card: 0 4px 6px -1px rgba(15, 23, 42, 0.03), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+  --shadow-card-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.05), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  background-color: var(--slate-50);
+  color: var(--slate-900);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  line-height: 1.5;
+  font-size: 16px; /* 基礎字級提升 */
+}
+
+/* 主版面：整合型置中容器 (增加寬度容納大字體) */
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.integrated-card {
+  width: 100%;
+  max-width: 740px;
+  background: #ffffff;
+  border-radius: var(--radius-container);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-container);
+  padding: 2.5rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* ==========================================================================
+   1. 頂部導覽列 (字體清晰放大)
+   ========================================================================== */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--slate-100);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-badge {
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: var(--slate-900);
+  color: #ffffff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.brand-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  letter-spacing: -0.2px;
+}
+
+.nav-pills {
+  display: flex;
+  background: var(--slate-100);
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  gap: 4px;
+}
+
+.nav-pill {
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-family: inherit;
+  font-size: 1.05rem; /* 放大到 1.05rem (~17px) */
+  font-weight: 600;
+  color: var(--slate-500);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.nav-pill:hover {
+  color: var(--slate-900);
+}
+
+.nav-pill.active {
+  background: var(--slate-900);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);
+}
+
+/* 視圖面板切換 */
+.view-panel {
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.view-panel.active {
+  display: flex;
+}
+
+/* ==========================================================================
+   2. 進度條區塊 (字體放大)
+   ========================================================================== */
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem; /* 放大到 1rem (~16px) */
+  font-weight: 600;
+}
+
+.session-date {
+  color: var(--slate-500);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card-counter {
+  color: var(--slate-900);
+  font-weight: 800;
+  font-size: 1.15rem; /* 醒目進度題號 */
+}
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  background: var(--slate-100);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--slate-900);
+  border-radius: var(--radius-pill);
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   3. 卡片本體 (單字超大氣派、音標清楚、例句大字號舒適好讀)
+   ========================================================================== */
+
+.card-scene {
+  width: 100%;
+  height: 440px; /* 從 360px 提升至 440px，容納大字體且不擁擠 */
+  perspective: 1200px;
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.34, 1.25, 0.64, 1);
+  cursor: pointer;
+  border-radius: var(--radius-card);
+  outline: none;
+}
+
+.flashcard:focus-visible {
+  box-shadow: 0 0 0 3px var(--slate-400);
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-card);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-card);
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.flashcard:hover .card-face {
+  border-color: var(--slate-300);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.card-front {
+  background: #ffffff;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: #fafafa;
+}
+
+/* 卡片上方標籤與輔助功能列 */
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pool-badge {
+  font-size: 0.92rem; /* 從 0.75rem 放大至 0.92rem */
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+}
+
+.pool-unlearned {
+  background: var(--slate-100);
+  color: var(--slate-700);
+  border-color: var(--slate-200);
+}
+
+.pool-hard {
+  background: var(--morandi-hard-bg);
+  color: var(--morandi-hard-text);
+  border-color: var(--morandi-hard-border);
+}
+
+.pool-review {
+  background: var(--morandi-review-bg);
+  color: var(--morandi-review-text);
+  border-color: var(--morandi-review-border);
+}
+
+.pool-mastered {
+  background: var(--morandi-mastered-bg);
+  color: var(--morandi-mastered-text);
+  border-color: var(--morandi-mastered-border);
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ghost-icon-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--slate-400);
+  font-size: 1.35rem; /* 圖標放大 */
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ghost-icon-btn:hover {
+  background: var(--slate-100);
+  color: var(--slate-800);
+}
+
+.star-btn.active {
+  color: #eab308;
+}
+
+/* 單字核心視覺呈現 (大字體) */
+.card-core {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  padding: 12px 0;
+}
+
+.word-heading {
+  font-size: 3.4rem; /* 從 2.5rem 大幅提升至 3.4rem (~54px) */
+  font-weight: 800;
+  color: var(--slate-900);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+
+.phonetic-heading {
+  font-size: 1.4rem; /* 從 1.125rem 提升至 1.4rem (~22px) */
+  color: var(--slate-500);
+  font-family: inherit;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.pos-wrapper {
+  margin-top: 4px;
+}
+
+.pos-badge {
+  font-size: 1rem; /* 從 0.78rem 提升至 1rem (~16px) */
+  font-weight: 600;
+  color: var(--slate-700);
+  background: var(--slate-100);
+  padding: 5px 16px;
+  border-radius: var(--radius-pill);
+}
+
+/* 卡片背面核心 */
+.back-core {
+  justify-content: center;
+}
+
+.meaning-heading {
+  font-size: 2.7rem; /* 從 2.1rem 提升至 2.7rem (~43px) */
+  font-weight: 800;
+  color: var(--slate-900);
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+.example-card {
+  width: 100%;
+  max-width: 580px;
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: 16px;
+  padding: 16px 20px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.example-label {
+  font-size: 0.85rem; /* 從 0.7rem 提升至 0.85rem */
+  font-weight: 700;
+  color: var(--slate-400);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.example-en {
+  font-size: 1.22rem; /* 從 0.92rem 提升至 1.22rem (~19.5px) */
+  color: var(--slate-800);
+  font-weight: 500;
+  line-height: 1.55;
+  margin-bottom: 6px;
+}
+
+.example-zh {
+  font-size: 1.08rem; /* 從 0.84rem 提升至 1.08rem (~17px) */
+  color: var(--slate-500);
+  line-height: 1.55;
+}
+
+/* 提示文字 */
+.card-footer-hint {
+  text-align: center;
+  font-size: 0.95rem; /* 從 0.78rem 提升至 0.95rem (~15px) */
+  color: var(--slate-400);
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   4. 核心評分操作區 (按鈕與文字全面放大)
+   ========================================================================== */
+
+.action-dock {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.dock-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.dock-row.hidden {
+  display: none !important;
+}
+
+/* 次要控制項：左右箭頭 */
+.nav-arrow-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--slate-200);
+  background: #ffffff;
+  color: var(--slate-600);
+  font-size: 1.4rem; /* 放大箭頭 */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.nav-arrow-btn:hover:not(:disabled) {
+  border-color: var(--slate-300);
+  background: var(--slate-50);
+  color: var(--slate-900);
+}
+
+.nav-arrow-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* 正面主按鈕：Slate 900 質感翻面鍵 (大文字) */
+.btn-primary-flip {
+  flex: 1;
+  height: 56px;
+  border-radius: var(--radius-button);
+  background: var(--slate-900);
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: 1.15rem; /* 從 0.95rem 放大至 1.15rem (~18.5px) */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary-flip:hover {
+  background: var(--slate-800);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+}
+
+.btn-primary-flip:active {
+  transform: scale(0.99);
+}
+
+.btn-primary-flip kbd {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* 背面評級群組：三大莫蘭迪色實體按鈕 (大文字) */
+.rating-button-group {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+.rate-btn {
+  flex: 1;
+  height: 56px;
+  border-radius: var(--radius-button);
+  border: 1.5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 4px 8px;
+}
+
+.rate-btn:active {
+  transform: scale(0.97);
+}
+
+.rate-title {
+  font-size: 1.1rem; /* 從 0.88rem 提升至 1.1rem (~17.5px) */
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.rate-sub {
+  font-size: 0.82rem; /* 從 0.68rem 提升至 0.82rem (~13px) */
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+/* 1. 莫蘭迪磚紅 (不熟) */
+.rate-hard {
+  background: var(--morandi-hard-bg);
+  border-color: var(--morandi-hard-border);
+  color: var(--morandi-hard-text);
+}
+
+.rate-hard:hover {
+  background: #fee2e2;
+  box-shadow: 0 4px 10px rgba(185, 28, 28, 0.14);
+  transform: translateY(-1px);
+}
+
+/* 2. 莫蘭迪柔和琥珀 (再複習) */
+.rate-review {
+  background: var(--morandi-review-bg);
+  border-color: var(--morandi-review-border);
+  color: var(--morandi-review-text);
+}
+
+.rate-review:hover {
+  background: #fef3c7;
+  box-shadow: 0 4px 10px rgba(180, 83, 9, 0.14);
+  transform: translateY(-1px);
+}
+
+/* 3. 莫蘭迪鼠尾草綠 (已經會了) */
+.rate-mastered {
+  background: var(--morandi-mastered-bg);
+  border-color: var(--morandi-mastered-border);
+  color: var(--morandi-mastered-text);
+}
+
+.rate-mastered:hover {
+  background: #dcfce7;
+  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.14);
+  transform: translateY(-1px);
+}
+
+/* 快捷鍵輔助列 */
+.shortcut-hints {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem; /* 從 0.75rem 提升至 0.9rem */
+  color: var(--slate-400);
+  margin-top: 4px;
+}
+
+.hint-dot {
+  color: var(--slate-300);
+}
+
+.shortcut-hints kbd {
+  background: var(--slate-100);
+  border: 1px solid var(--slate-200);
+  border-radius: 5px;
+  padding: 2px 6px;
+  font-size: 0.82rem;
+  color: var(--slate-700);
+  margin-right: 2px;
+}
+
+/* ==========================================================================
+   5. 完成結算卡片
+   ========================================================================== */
+
+.completion-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: var(--radius-card);
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 1px solid var(--slate-200);
+  animation: fadeIn 0.3s ease;
+}
+
+.completion-card.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.completion-badge {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  background: var(--slate-100);
+  color: var(--slate-700);
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+}
+
+.completion-inner h2 {
+  font-size: 1.6rem; /* 放大標題 */
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 8px;
+}
+
+.completion-desc {
+  font-size: 1.05rem; /* 放大說明 */
+  color: var(--slate-500);
+  margin-bottom: 24px;
+}
+
+.completion-summary-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.summary-chip {
+  font-size: 0.98rem; /* 放大晶片字 */
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+}
+
+.chip-hard {
+  background: var(--morandi-hard-bg);
+  border-color: var(--morandi-hard-border);
+  color: var(--morandi-hard-text);
+}
+
+.chip-review {
+  background: var(--morandi-review-bg);
+  border-color: var(--morandi-review-border);
+  color: var(--morandi-review-text);
+}
+
+.chip-mastered {
+  background: var(--morandi-mastered-bg);
+  border-color: var(--morandi-mastered-border);
+  color: var(--morandi-mastered-text);
+}
+
+.completion-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.btn-primary-action {
+  height: 52px;
+  border-radius: var(--radius-button);
+  background: var(--slate-900);
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-primary-action:hover {
+  background: var(--slate-800);
+}
+
+.completion-sub-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-secondary-action {
+  flex: 1;
+  height: 48px;
+  border-radius: var(--radius-button);
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  color: var(--slate-700);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-secondary-action:hover {
+  background: var(--slate-100);
+  color: var(--slate-900);
+}
+
+/* ==========================================================================
+   6. 學習統計面板 (大字體清晰易讀)
+   ========================================================================== */
+
+.stats-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-summary-card {
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: 18px;
+  padding: 18px 22px;
+}
+
+.stats-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.stats-summary-header h3 {
+  font-size: 1.15rem; /* 從 0.9rem 放大至 1.15rem */
+  font-weight: 700;
+  color: var(--slate-800);
+}
+
+.mastery-value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--morandi-mastered-text);
+}
+
+.stacked-track {
+  width: 100%;
+  height: 10px; /* 加厚進度條 */
+  background: var(--slate-200);
+  border-radius: var(--radius-pill);
+  display: flex;
+  overflow: hidden;
+}
+
+.track-seg {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.seg-mastered { background: #22c55e; }
+.seg-review { background: #f59e0b; }
+.seg-hard { background: #ef4444; }
+.seg-unlearned { background: var(--slate-300); }
+
+/* 四大單字池長條圖列表 */
+.pools-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pool-row {
+  background: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pool-row-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pool-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pool-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-unlearned { background: var(--slate-400); }
+.dot-hard { background: var(--morandi-hard-dot); }
+.dot-review { background: var(--morandi-review-dot); }
+.dot-mastered { background: var(--morandi-mastered-dot); }
+
+.pool-text {
+  font-size: 1.05rem; /* 從 0.86rem 放大至 1.05rem (~17px) */
+  font-weight: 700;
+  color: var(--slate-800);
+}
+
+.pool-num {
+  font-size: 1.25rem; /* 從 0.95rem 放大至 1.25rem (~20px) */
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.pool-bar-track {
+  width: 100%;
+  height: 8px; /* 條寬增加 */
+  background: var(--slate-100);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.pool-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width 0.4s ease;
+}
+
+.fill-unlearned { background: var(--slate-400); }
+.fill-hard { background: var(--morandi-hard-dot); }
+.fill-review { background: var(--morandi-review-dot); }
+.fill-mastered { background: var(--morandi-mastered-dot); }
+
+.stats-controls-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn-subtle {
+  flex: 1;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--slate-200);
+  background: #ffffff;
+  color: var(--slate-700);
+  font-family: inherit;
+  font-size: 0.95rem; /* 放大按鈕文字 */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-subtle:hover {
+  background: var(--slate-50);
+  border-color: var(--slate-300);
+  color: var(--slate-900);
+}
+
+.btn-subtle-danger {
+  color: #b91c1c;
+}
+
+.btn-subtle-danger:hover {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+/* ==========================================================================
+   7. 收藏清單面板
+   ========================================================================== */
+
+.starred-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.starred-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--slate-100);
+}
+
+.starred-panel-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.starred-meta {
+  font-size: 0.95rem;
+  color: var(--slate-500);
+}
+
+.starred-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.starred-item-card {
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starred-item-word {
+  font-size: 1.25rem; /* 單字加大 */
+  font-weight: 800;
+  color: var(--slate-900);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.starred-item-phonetic {
+  font-size: 0.95rem;
+  color: var(--slate-500);
+  font-family: inherit;
+  margin-top: 2px;
+}
+
+.starred-item-meaning {
+  font-size: 1.05rem; /* 意思加大 */
+  font-weight: 600;
+  color: var(--slate-700);
+  margin-top: 4px;
+}
+
+/* 響應式調整 */
+@media (max-width: 600px) {
+  .integrated-card {
+    padding: 1.75rem 1.25rem;
+  }
+  
+  .card-scene {
+    height: 450px;
+  }
+  
+  .card-face {
+    padding: 2rem 1.5rem;
+  }
+  
+  .word-heading {
+    font-size: 2.7rem;
+  }
+  
+  .meaning-heading {
+    font-size: 2.2rem;
+  }
+  
+  .example-en {
+    font-size: 1.1rem;
+  }
+  
+  .example-zh {
+    font-size: 0.98rem;
+  }
+  
+  .rating-button-group {
+    gap: 8px;
+  }
+  
+  .rate-title {
+    font-size: 0.95rem;
+  }
+  
+  .rate-sub {
+    display: none;
+  }
+}

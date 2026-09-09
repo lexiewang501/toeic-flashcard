@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "word": "streamline",
+    "phonetic": "/ˈstriːm.laɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "簡化、精簡（流程以提高效率）",
+    "example": "The operations director introduced new software to streamline the procurement workflow.",
+    "exampleZh": "營運主管引進了新軟體以精簡採購審批流程。"
+  },
+  {
+    "id": 2,
+    "word": "curtail",
+    "phonetic": "/kɚˈteɪl/",
+    "partOfSpeech": "verb",
+    "meaning": "縮減、削減（開支或預算）",
+    "example": "Management had to curtail business travel expenses in response to quarterly budget cuts.",
+    "exampleZh": "為了因應季度預算縮減，管理層不得不削減公務出差開銷。"
+  },
+  {
+    "id": 3,
+    "word": "waive",
+    "phonetic": "/weɪv/",
+    "partOfSpeech": "verb",
+    "meaning": "放棄（權利）；免除（費用或罰金）",
+    "example": "The regional director agreed to waive the late cancellation fee for our long-term client.",
+    "exampleZh": "區域總監同意為我們的長期合作客戶免除逾期取消手續費。"
+  },
+  {
+    "id": 4,
+    "word": "tentative",
+    "phonetic": "/ˈten.t̬ə.t̬ɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "暫定的、初步的",
+    "example": "The project manager circulated a tentative timeline for the client system rollout.",
+    "exampleZh": "專案經理向大家發送了客戶系統上線的暫定時程表。"
+  },
+  {
+    "id": 5,
+    "word": "discrepancy",
+    "phonetic": "/dɪˈskrep.ən.si/",
+    "partOfSpeech": "noun",
+    "meaning": "差異、出入、不一致之處",
+    "example": "The internal audit revealed a significant discrepancy between purchase orders and inventory counts.",
+    "exampleZh": "內部審計發現採購單與庫存盤點數量之間存在顯著出入。"
+  },
+  {
+    "id": 6,
+    "word": "consolidate",
+    "phonetic": "/kənˈsɑː.lə.deɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "整合、合併；鞏固",
+    "example": "The executive committee decided to consolidate regional offices to reduce operational overhead.",
+    "exampleZh": "執行委員會決定合併各區域辦公室以降低營運經常性開銷。"
+  },
+  {
+    "id": 7,
+    "word": "stringent",
+    "phonetic": "/ˈstrɪn.dʒənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "嚴格的、縝密的（標準、規範）",
+    "example": "All financial institutions must comply with stringent data privacy and compliance regulations.",
+    "exampleZh": "所有金融機構都必須嚴格遵守嚴格的資料隱私與法規遵循準則。"
+  },
+  {
+    "id": 8,
+    "word": "prerequisite",
+    "phonetic": "/priːˈrek.wə.zɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "先決條件、必備前提",
+    "example": "Proven experience in cross-functional team leadership is a prerequisite for this director role.",
+    "exampleZh": "具備跨部門團隊領導的實務經驗是晉升此總監職位的必備條件。"
+  },
+  {
+    "id": 9,
+    "word": "designate",
+    "phonetic": "/ˈdez.ɪɡ.neɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "指派、任命；指定",
+    "example": "The vice president will designate an acting team lead while Ms. Keller is on leave.",
+    "exampleZh": "在凱勒女士請假期間，副總裁將指派一位代理團隊負責人。"
+  },
+  {
+    "id": 10,
+    "word": "mandate",
+    "phonetic": "/ˈmæn.deɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "命令、強制要求；授權",
+    "example": "Corporate headquarters mandates two-factor authentication for all remote access portals.",
+    "exampleZh": "企業總部強制要求所有遠距存取入口都必須採用雙重身分驗證。"
+  },
+  {
+    "id": 11,
+    "word": "adjourn",
+    "phonetic": "/əˈdʒɝːn/",
+    "partOfSpeech": "verb",
+    "meaning": "使休會、宣布延期結束（會議）",
+    "example": "The chairperson announced the board meeting would adjourn until 2:00 PM tomorrow.",
+    "exampleZh": "主席宣布董事會會議暫時休會，延至明日下午兩點繼續進行。"
+  },
+  {
+    "id": 12,
+    "word": "reimburse",
+    "phonetic": "/ˌriː.ɪmˈbɝːs/",
+    "partOfSpeech": "verb",
+    "meaning": "核銷、報銷（差旅代墊款）",
+    "example": "Finance will reimburse travel meal expenses upon receiving scanned original receipts.",
+    "exampleZh": "財務部門在收到原始收據掃描檔後將核銷出差餐費。"
+  },
+  {
+    "id": 13,
+    "word": "compliance",
+    "phonetic": "/kəmˈplaɪ.əns/",
+    "partOfSpeech": "noun",
+    "meaning": "合規性、法規遵循",
+    "example": "Our compliance officer confirmed that the export shipment adheres to trade restrictions.",
+    "exampleZh": "我們的合規主管確認該批外銷貨物完全符合貿易管制規定。"
+  },
+  {
+    "id": 14,
+    "word": "appraisal",
+    "phonetic": "/əˈpreɪ.zəl/",
+    "partOfSpeech": "noun",
+    "meaning": "考績評核、績效評估",
+    "example": "Managers are scheduling one-on-one sessions for annual performance appraisals next week.",
+    "exampleZh": "各主管正著手安排下週的一對一年度績效評核面談。"
+  },
+  {
+    "id": 15,
+    "word": "remuneration",
+    "phonetic": "/rɪˌmjuː.nəˈreɪ.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "薪資待遇、酬勞待遇",
+    "example": "The competitive executive remuneration package includes stock options and health coverage.",
+    "exampleZh": "這份優渥的高階主管薪酬方案包含股票選擇權以及高額醫療保險。"
+  },
+  {
+    "id": 16,
+    "word": "attrition",
+    "phonetic": "/əˈtrɪʃ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "員工自然損耗、離職率",
+    "example": "The consulting firm managed to downsize department headcounts through natural attrition.",
+    "exampleZh": "這家管顧公司透過人員自然離職的方式縮減了部門人力編制。"
+  },
+  {
+    "id": 17,
+    "word": "expedite",
+    "phonetic": "/ˈek.spə.daɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "加快、催促加速（進度）",
+    "example": "We submitted an urgent request to expedite delivery of replacement server components.",
+    "exampleZh": "我們遞交了緊急申請以加快伺服器更換零件的送達速度。"
+  },
+  {
+    "id": 18,
+    "word": "facilitate",
+    "phonetic": "/fəˈsɪl.ə.teɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "促成、使順利推進、協調",
+    "example": "A skilled project coordinator was assigned to facilitate communication between both teams.",
+    "exampleZh": "公司指派了一位資深的專案協調員來促進兩個團隊之間的通暢溝通。"
+  },
+  {
+    "id": 19,
+    "word": "incentive",
+    "phonetic": "/ɪnˈsen.tɪv/",
+    "partOfSpeech": "noun",
+    "meaning": "激勵誘因、業績獎勵",
+    "example": "Sales representatives who achieve their annual target will receive a cash incentive.",
+    "exampleZh": "達成年度銷售目標的業務代表將獲得高額現金獎金激勵。"
+  },
+  {
+    "id": 20,
+    "word": "meticulous",
+    "phonetic": "/məˈtɪk.jə.ləs/",
+    "partOfSpeech": "adjective",
+    "meaning": "一絲不苟的、嚴謹細緻的",
+    "example": "The auditor appreciated our team's meticulous recordkeeping during the annual inspection.",
+    "exampleZh": "審計師對我們團隊在年度查核中所展現的一絲不苟記帳記錄表示肯定。"
+  },
+  {
+    "id": 21,
+    "word": "lucrative",
+    "phonetic": "/ˈluː.krə.t̬ɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "獲利豐厚的、商機龐大的",
+    "example": "Winning the nationwide telecommunications contract proved to be extremely lucrative.",
+    "exampleZh": "贏得這項全國性的電信標案合約被證明是一筆獲利極其豐厚的生意。"
+  },
+  {
+    "id": 22,
+    "word": "overhaul",
+    "phonetic": "/ˈoʊ.vɚ.hɑːl/",
+    "partOfSpeech": "verb",
+    "meaning": "全面檢修；徹底革新（制度）",
+    "example": "The technology division plans to overhaul the company's customer relationship portal.",
+    "exampleZh": "資訊技術部門計畫全面革新公司的客戶關係管理系統。"
+  },
+  {
+    "id": 23,
+    "word": "oversee",
+    "phonetic": "/ˌoʊ.vɚˈsiː/",
+    "partOfSpeech": "verb",
+    "meaning": "監督、監理（專案或人員）",
+    "example": "A senior engineer was recruited to oversee quality control across Asian manufacturing hubs.",
+    "exampleZh": "公司聘請了一位資深工程師來監督亞洲各製造據點的品質控管。"
+  },
+  {
+    "id": 24,
+    "word": "reconcile",
+    "phonetic": "/ˈrek.ən.saɪl/",
+    "partOfSpeech": "verb",
+    "meaning": "對帳；調和消除差異",
+    "example": "The senior accountant worked overtime to reconcile the ledger balances with bank records.",
+    "exampleZh": "資深會計師加班將總帳結餘與銀行對帳單金額進行核對調和。"
+  },
+  {
+    "id": 25,
+    "word": "recoup",
+    "phonetic": "/rɪˈkuːp/",
+    "partOfSpeech": "verb",
+    "meaning": "收回（成本或投資損失）",
+    "example": "The studio expects to recoup marketing investments within two weeks of product release.",
+    "exampleZh": "團隊預期在產品上市兩週內即可全數收回前期行銷投資。"
+  },
+  {
+    "id": 26,
+    "word": "redundant",
+    "phonetic": "/rɪˈdʌn.dənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "多餘重複的；（職位）被精簡裁撤的",
+    "example": "The merger led to redundant administrative roles being reorganized across divisions.",
+    "exampleZh": "這場企業合併導致跨部門中重複的人事行政職缺被重新精簡重組。"
+  },
+  {
+    "id": 27,
+    "word": "refurbish",
+    "phonetic": "/ˌriːˈfɝː.bɪʃ/",
+    "partOfSpeech": "verb",
+    "meaning": "翻新、整修（辦公室或硬體）",
+    "example": "Management allocated capital to refurbish the executive conference suites next quarter.",
+    "exampleZh": "管理層撥出專項資金，計畫於下季度全面整修高階主管會議室。"
+  },
+  {
+    "id": 28,
+    "word": "stipulate",
+    "phonetic": "/ˈstɪp.jə.leɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "（在合約條款中）明確約定規定",
+    "example": "The vendor agreement stipulates that replacement parts must be shipped within 24 hours.",
+    "exampleZh": "廠商合約明確規定替換零件必須在二十四小時之內寄出。"
+  },
+  {
+    "id": 29,
+    "word": "subsequent",
+    "phonetic": "/ˈsʌb.sə.kwənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "隨後的、後續接續的",
+    "example": "Subsequent testing confirmed that the cybersecurity patch resolved the system vulnerability.",
+    "exampleZh": "隨後的追蹤測試確認了該資安修正檔確實解決了系統弱點。"
+  },
+  {
+    "id": 30,
+    "word": "substantial",
+    "phonetic": "/səbˈstæn.ʃəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "大量的、實質重大的",
+    "example": "The new enterprise subscription model resulted in a substantial revenue increase.",
+    "exampleZh": "全新的企業級訂閱商業模式帶來了營收實質且大幅的成長。"
+  },
+  {
+    "id": 31,
+    "word": "unprecedented",
+    "phonetic": "/ʌnˈpres.ə.den.t̬ɪd/",
+    "partOfSpeech": "adjective",
+    "meaning": "史無前例的、前所未有的",
+    "example": "The flagship device experienced unprecedented demand during its opening pre-order weekend.",
+    "exampleZh": "這款旗艦產品在開放預購的首個週末迎來了前所未有的熱烈需求。"
+  },
+  {
+    "id": 32,
+    "word": "versatile",
+    "phonetic": "/ˈvɝː.sə.t̬əl/",
+    "partOfSpeech": "adjective",
+    "meaning": "多功能的、身兼多職的",
+    "example": "We are seeking a versatile project manager skilled in both budget analysis and agile coding.",
+    "exampleZh": "我們正在尋找一位兼具預算分析與敏捷開發能力的多功能專案經理。"
+  },
+  {
+    "id": 33,
+    "word": "withhold",
+    "phonetic": "/wɪðˈhoʊld/",
+    "partOfSpeech": "verb",
+    "meaning": "暫扣、不予發放；隱匿",
+    "example": "The accounting team will withhold taxes directly from the contractor's monthly disbursement.",
+    "exampleZh": "會計團隊將直接從外包商的每月請款中扣除相應稅金。"
+  },
+  {
+    "id": 34,
+    "word": "adjacent",
+    "phonetic": "/əˈdʒeɪ.sənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "毗鄰的、緊挨著的",
+    "example": "Our logistics hub is conveniently located adjacent to the international cargo airport.",
+    "exampleZh": "我們的物流配送中心座落於國際貨運機場旁邊，地理位置極為便利。"
+  },
+  {
+    "id": 35,
+    "word": "commensurate",
+    "phonetic": "/kəˈmen.sjɚ.ət/",
+    "partOfSpeech": "adjective",
+    "meaning": "相稱的、成比例的（後接 with）",
+    "example": "Salary compensation will be commensurate with relevant industry expertise and credentials.",
+    "exampleZh": "薪資待遇將與應徵者相關的產業專業資歷與證照水準完全相稱。"
+  },
+  {
+    "id": 36,
+    "word": "comprehensive",
+    "phonetic": "/ˌkɑːm.prəˈhen.sɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "全面性的、詳盡完善的",
+    "example": "The human resources team organized a comprehensive onboarding orientation for interns.",
+    "exampleZh": "人資團隊為新進實習生安排了全面而詳盡的到職培訓說明會。"
+  },
+  {
+    "id": 37,
+    "word": "compromise",
+    "phonetic": "/ˈkɑːm.prə.maɪz/",
+    "partOfSpeech": "noun",
+    "meaning": "妥協互讓；折衷方案",
+    "example": "After three rounds of dialogue, both labor and management reached an equitable compromise.",
+    "exampleZh": "經過三輪談判，勞資雙方終於達成了一項公平合理的妥協折衷方案。"
+  },
+  {
+    "id": 38,
+    "word": "confidential",
+    "phonetic": "/ˌkɑːn.fəˈden.ʃəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "極機密的、私密的",
+    "example": "Personnel performance files and compensation figures must remain strictly confidential.",
+    "exampleZh": "員工個人考績檔案與薪酬數字必須保持絕對機密。"
+  },
+  {
+    "id": 39,
+    "word": "contingent",
+    "phonetic": "/kənˈtɪn.dʒənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "視…而定的、因條件而轉變的（後接 on/upon）",
+    "example": "Final contract execution is contingent upon approval from the overseas legal department.",
+    "exampleZh": "合約的最終簽署執行取決於海外法務部門的正式核准。"
+  },
+  {
+    "id": 40,
+    "word": "delegate",
+    "phonetic": "/ˈdel.ə.ɡeɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "授權委派（工作任務）",
+    "example": "Department directors should delegate day-to-day administrative duties to team leads.",
+    "exampleZh": "部門主管應將日常行政庶務妥善委派給各小組長負責。"
+  },
+  {
+    "id": 41,
+    "word": "delinquent",
+    "phonetic": "/dɪˈlɪŋ.kwənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "欠款未付的、逾期未繳的",
+    "example": "Accounts that remain delinquent for over 60 days will incur automated late penalty charges.",
+    "exampleZh": "拖欠超過六十天的帳戶將被系統自動加收逾期違約金。"
+  },
+  {
+    "id": 42,
+    "word": "demographics",
+    "phonetic": "/ˌdem.əˈɡræf.ɪks/",
+    "partOfSpeech": "noun",
+    "meaning": "受眾人口統計特徵、客群分佈",
+    "example": "Market research shows shifting demographics toward tech-savvy younger consumers.",
+    "exampleZh": "市場調查顯示目標客群結構正轉向熟稔科技產品的年輕族群。"
+  },
+  {
+    "id": 43,
+    "word": "depreciate",
+    "phonetic": "/dɪˈpriː.ʃi.eɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "折舊、隨時間貶值",
+    "example": "Heavy enterprise server hardware will depreciate over an estimated four-year accounting cycle.",
+    "exampleZh": "重型企業伺服器硬體設備將依預計四年的會計週期逐年提列折舊。"
+  },
+  {
+    "id": 44,
+    "word": "diminish",
+    "phonetic": "/dɪˈmɪn.ɪʃ/",
+    "partOfSpeech": "verb",
+    "meaning": "減少、削弱降低",
+    "example": "Automating routine data entry helped diminish the risk of clerical mistakes.",
+    "exampleZh": "將例行性資料輸入流程自動化有助於降低人為行政錯誤的風險。"
+  },
+  {
+    "id": 45,
+    "word": "discretion",
+    "phonetic": "/dɪˈskreʃ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "裁量權、自行決定權",
+    "example": "Branch managers have the discretion to offer complimentary upgrades to VIP clients.",
+    "exampleZh": "分行經理擁有自行斟酌向貴賓客戶提供免費升級禮遇的裁量權。"
+  },
+  {
+    "id": 46,
+    "word": "downsize",
+    "phonetic": "/ˈdaʊn.saɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "精簡組織、縮編人力規模",
+    "example": "The telecom corporation decided to downsize its retail network in favor of online sales.",
+    "exampleZh": "該電信企業決定縮減實體門市規模，全力轉型發展線上銷售通路。"
+  },
+  {
+    "id": 47,
+    "word": "endorse",
+    "phonetic": "/ɪnˈdɔːrs/",
+    "partOfSpeech": "verb",
+    "meaning": "正式贊同、認可；代言背書",
+    "example": "The executive committee voted unanimously to endorse the international expansion plan.",
+    "exampleZh": "執行委員會全體一致表決通過認可這項跨國市場拓展計畫。"
+  },
+  {
+    "id": 48,
+    "word": "enhance",
+    "phonetic": "/ɪnˈhæns/",
+    "partOfSpeech": "verb",
+    "meaning": "提升、增進品質或效能",
+    "example": "The software update includes security upgrades designed to enhance cloud data protection.",
+    "exampleZh": "該軟體版本更新包含了旨在提升雲端資料保護力的安全性升級。"
+  },
+  {
+    "id": 49,
+    "word": "entail",
+    "phonetic": "/ɪnˈteɪl/",
+    "partOfSpeech": "verb",
+    "meaning": "牽涉、必然包含需要",
+    "example": "Migrating to the new cloud infrastructure will entail minimal downtime for end users.",
+    "exampleZh": "將系統遷移至全新雲端基礎架構只會給終端用戶帶來極短暫的停機時間。"
+  },
+  {
+    "id": 50,
+    "word": "exceptional",
+    "phonetic": "/ɪkˈsep.ʃən.əl/",
+    "partOfSpeech": "adjective",
+    "meaning": "卓越傑出的、非凡的",
+    "example": "The quarterly bonus reflects the team's exceptional performance under tight project deadlines.",
+    "exampleZh": "這筆季度獎金反映了團隊在緊湊專案期限下所展現的卓越傑出績效。"
+  }
+]

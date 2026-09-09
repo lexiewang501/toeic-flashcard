@@ -1,0 +1,452 @@
+[
+  {
+    "id": 101,
+    "word": "probationary",
+    "phonetic": "/proʊˈbeɪ.ʃən.er.i/",
+    "partOfSpeech": "adjective",
+    "meaning": "試用期的、審查階段的",
+    "example": "New hires receive permanent benefits upon successful completion of a 90-day probationary period.",
+    "exampleZh": "新進同仁在順利通過為期九十天的試用期後，即享有正式員工各項福利。"
+  },
+  {
+    "id": 102,
+    "word": "procure",
+    "phonetic": "/prəˈkjʊr/",
+    "partOfSpeech": "verb",
+    "meaning": "籌措、採購取得（設備或原料）",
+    "example": "The supply chain manager was able to procure critical semiconductor components ahead of schedule.",
+    "exampleZh": "供應鏈經理得以提前籌措採購到關鍵的半導體零組件。"
+  },
+  {
+    "id": 103,
+    "word": "productive",
+    "phonetic": "/prəˈdʌk.tɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "富有成效的、生產力高的",
+    "example": "Both engineering leads held a highly productive discussion on system scalability.",
+    "exampleZh": "兩位技術主管針對系統的可擴展性進行了富有成效的高效率討論。"
+  },
+  {
+    "id": 104,
+    "word": "proficiency",
+    "phonetic": "/prəˈfɪʃ.ən.si/",
+    "partOfSpeech": "noun",
+    "meaning": "熟練精通程度、專業熟稔度",
+    "example": "Advanced proficiency in enterprise spreadsheet analysis is required for this analyst position.",
+    "exampleZh": "應徵這項分析師職缺必須具備高度熟練的企業級試算表數據分析能力。"
+  },
+  {
+    "id": 105,
+    "word": "profound",
+    "phonetic": "/prəˈfaʊnd/",
+    "partOfSpeech": "adjective",
+    "meaning": "深遠重大的（影響或轉變）",
+    "example": "The implementation of automated logistics had a profound impact on operating margins.",
+    "exampleZh": "物流自動化的導入實施對公司的營業利益率產生了極為深遠正向的影響。"
+  },
+  {
+    "id": 106,
+    "word": "prohibit",
+    "phonetic": "/prəˈhɪb.ɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "（法規上）明文禁止",
+    "example": "Company compliance guidelines strictly prohibit the use of unauthorized USB memory drives.",
+    "exampleZh": "公司資安守則嚴格禁止在辦公電腦上插用未經官方授權的隨身碟裝置。"
+  },
+  {
+    "id": 107,
+    "word": "projection",
+    "phonetic": "/prəˈdʒek.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "（財務或營收）預估預測數值",
+    "example": "The revised financial projection anticipates an eight percent revenue growth next quarter.",
+    "exampleZh": "修訂後的財務預估報告預期下一季度營業額將呈現百分之八的穩健增長。"
+  },
+  {
+    "id": 108,
+    "word": "prolong",
+    "phonetic": "/prəˈlɑːŋ/",
+    "partOfSpeech": "verb",
+    "meaning": "延長、拖長（期限或合約）",
+    "example": "Both corporations agreed to prolong the trial partnership through the end of the year.",
+    "exampleZh": "兩家企業一致同意將先導合作夥伴試辦期延長至今年底。"
+  },
+  {
+    "id": 109,
+    "word": "prominent",
+    "phonetic": "/ˈprɑː.mə.nənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "顯著突出的；著名傑出的",
+    "example": "The keynote address will be delivered by a prominent software industry pioneer.",
+    "exampleZh": "本次研討會的主題演講將由一位享譽盛名的軟體業界先驅親自發表。"
+  },
+  {
+    "id": 110,
+    "word": "prompt",
+    "phonetic": "/prɑːmpt/",
+    "partOfSpeech": "adjective",
+    "meaning": "迅速即時的、毫不遲延的",
+    "example": "We appreciate your prompt reply regarding the revised commercial proposal.",
+    "exampleZh": "非常感謝您對我們修訂後之商務合作提案所給予的即時迅速回覆。"
+  },
+  {
+    "id": 111,
+    "word": "proportional",
+    "phonetic": "/prəˈpɔːr.ʃən.əl/",
+    "partOfSpeech": "adjective",
+    "meaning": "成比例的、相對應的",
+    "example": "Performance bonuses are directly proportional to each consultant's billable client hours.",
+    "exampleZh": "績效獎金的發放金額與每位顧問向客戶實際請款的時數直接成正比。"
+  },
+  {
+    "id": 112,
+    "word": "prospective",
+    "phonetic": "/prəˈspek.tɪv/",
+    "partOfSpeech": "adjective",
+    "meaning": "潛在未來的（客戶或投資人）",
+    "example": "Our sales executives scheduled product demonstrations for twelve prospective enterprise buyers.",
+    "exampleZh": "我們的業務主管為十二家潛在的企業買主安排了產品功能示範解說。"
+  },
+  {
+    "id": 113,
+    "word": "protocol",
+    "phonetic": "/ˈproʊ.t̬ə.kɑːl/",
+    "partOfSpeech": "noun",
+    "meaning": "標準作業規程、安全協議",
+    "example": "All laboratory technical staff must adhere to established biosafety disposal protocols.",
+    "exampleZh": "所有實驗室技術人員都必須嚴格遵守既定的生物安全廢棄物處置規程。"
+  },
+  {
+    "id": 114,
+    "word": "provision",
+    "phonetic": "/prəˈvɪʒ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "合約條款約定；物資供應",
+    "example": "Under the warranty provision, the manufacturer will replace defective parts free of charge.",
+    "exampleZh": "依據保固條款之約定，製造商將對瑕疵零件予以免費更換。"
+  },
+  {
+    "id": 115,
+    "word": "proximity",
+    "phonetic": "/prɑːkˈsɪm.ə.t̬i/",
+    "partOfSpeech": "noun",
+    "meaning": "鄰近性、接近距離 (in close proximity to)",
+    "example": "The regional office's proximity to downtown financial centers makes it ideal for client meetings.",
+    "exampleZh": "該區域辦公室緊鄰市中心金融樞紐，極為適合安排客戶商務會晤。"
+  },
+  {
+    "id": 116,
+    "word": "punctual",
+    "phonetic": "/ˈpʌŋk.tʃu.əl/",
+    "partOfSpeech": "adjective",
+    "meaning": "準時守時的",
+    "example": "The executive emphasized that candidates must be punctual for their second-round interviews.",
+    "exampleZh": "高階主管強調應試者在參加第二輪面試時必須絕對準時。"
+  },
+  {
+    "id": 117,
+    "word": "quota",
+    "phonetic": "/ˈkwoʊ.t̬ə/",
+    "partOfSpeech": "noun",
+    "meaning": "業績配額、指標目標量",
+    "example": "The regional sales team exceeded their quarterly revenue quota by fourteen percent.",
+    "exampleZh": "該區域銷售團隊超額完成了十四個百分點的季度營收配額指標。"
+  },
+  {
+    "id": 118,
+    "word": "ratify",
+    "phonetic": "/ˈræt̬.ə.faɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "正式批准、簽署認可（協議或提案）",
+    "example": "The corporate board convened to ratify the acquisition agreement yesterday afternoon.",
+    "exampleZh": "公司董事會於昨日下午召開會議，正式批准了該項股權收購協議。"
+  },
+  {
+    "id": 119,
+    "word": "rationale",
+    "phonetic": "/ˌræʃ.əˈnæl/",
+    "partOfSpeech": "noun",
+    "meaning": "背後理由、合理依據分析",
+    "example": "The strategy document outlined the business rationale behind entering the Southeast Asian market.",
+    "exampleZh": "策略規劃書中詳細闡述了揮軍進入東南亞市場背後的商業考量與理論依據。"
+  },
+  {
+    "id": 120,
+    "word": "rebate",
+    "phonetic": "/ˈriː.beɪt/",
+    "partOfSpeech": "noun",
+    "meaning": "部分退款、回饋金折抵",
+    "example": "Enterprise software clients who upgrade today qualify for a fifteen percent renewal rebate.",
+    "exampleZh": "今天升級系統的企業級軟體客戶，符合享有續約款項八五折回饋退款的資格。"
+  },
+  {
+    "id": 121,
+    "word": "recession",
+    "phonetic": "/rɪˈseʃ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "經濟衰退、景氣蕭條期",
+    "example": "Prudent cash flow planning helped the enterprise navigate the recent economic recession.",
+    "exampleZh": "審慎務實的現金流規劃協助這家企業安然度過了近期的經濟景氣衰退期。"
+  },
+  {
+    "id": 122,
+    "word": "recipient",
+    "phonetic": "/rɪˈsɪp.i.ənt/",
+    "partOfSpeech": "noun",
+    "meaning": "接受者、受領人、收件人",
+    "example": "Please verify that the intended email recipient has active security permissions before sending.",
+    "exampleZh": "寄出信件前，請再三核實指定收件人具備有效的資訊安全讀取授權。"
+  },
+  {
+    "id": 123,
+    "word": "reciprocal",
+    "phonetic": "/rɪˈsɪp.rə.kəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "互惠平等的、相互對等的",
+    "example": "Both partner airlines entered into a reciprocal frequent-flyer mileage agreement.",
+    "exampleZh": "兩家合作夥伴航空公司簽署了一份互惠對等的飛行常客哩程累積協議。"
+  },
+  {
+    "id": 124,
+    "word": "rectify",
+    "phonetic": "/ˈrek.tə.faɪ/",
+    "partOfSpeech": "verb",
+    "meaning": "糾正、迅速補救改善（錯誤）",
+    "example": "Customer service acted immediately to rectify the billing error on the client's invoice.",
+    "exampleZh": "客服團隊立即採取處置行動，以更正客戶請款單上的記帳錯誤。"
+  },
+  {
+    "id": 125,
+    "word": "refine",
+    "phonetic": "/rɪˈfaɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "精進完善、打磨優化（策略）",
+    "example": "The marketing analytics team will refine our user targeting algorithm based on beta tests.",
+    "exampleZh": "行銷分析團隊將依據封測結果進一步打磨並精進我們的用戶受眾定位演算法。"
+  },
+  {
+    "id": 126,
+    "word": "reinstate",
+    "phonetic": "/ˌriː.ɪnˈsteɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "恢復（職位、權限或服務條款）",
+    "example": "IT support will promptly reinstate network access permissions once credentials are confirmed.",
+    "exampleZh": "在身分憑證確認無誤後，IT支援人員將迅速恢復使用者的內部網路存取權限。"
+  },
+  {
+    "id": 127,
+    "word": "reiterate",
+    "phonetic": "/riˈɪt̬.ɚ.eɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "重申、再次著重強調",
+    "example": "The project director wishes to reiterate that the client deadline cannot be extended.",
+    "exampleZh": "專案總監希望再次重申：客戶要求的最終交期絕不予順延。"
+  },
+  {
+    "id": 128,
+    "word": "relocate",
+    "phonetic": "/ˌriːˈloʊ.keɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "遷移辦公室、重新安置搬遷",
+    "example": "The engineering division will relocate to the new research campus in Silicon Valley.",
+    "exampleZh": "工程研發部門將於下個月正式搬遷進駐位於矽谷的全新研發園區。"
+  },
+  {
+    "id": 129,
+    "word": "reluctance",
+    "phonetic": "/rɪˈlʌk.təns/",
+    "partOfSpeech": "noun",
+    "meaning": "勉強猶豫、不情願之意",
+    "example": "Initial client reluctance to adopt the new cloud system dissolved after hands-on training.",
+    "exampleZh": "客戶起初對於導入新雲端系統的猶豫不情願，在實機操作培訓後完全消除。"
+  },
+  {
+    "id": 130,
+    "word": "remedy",
+    "phonetic": "/ˈrem.ə.di/",
+    "partOfSpeech": "noun",
+    "meaning": "補救措施、解決方案",
+    "example": "The technician proposed a swift software patch as the most effective remedy for the glitch.",
+    "exampleZh": "技術工程師提出發布緊急軟體更新補丁，作為修復系統錯誤最立竿見影的補救措施。"
+  },
+  {
+    "id": 131,
+    "word": "remittance",
+    "phonetic": "/rɪˈmɪt̬.əns/",
+    "partOfSpeech": "noun",
+    "meaning": "匯款、匯出款項",
+    "example": "Kindly quote your transaction reference code when submitting international remittance details.",
+    "exampleZh": "提交跨國匯款明細時，煩請務必附上您的交易參考編號以供核帳。"
+  },
+  {
+    "id": 132,
+    "word": "renovate",
+    "phonetic": "/ˈren.ə.veɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "翻新整建（空間或建築）",
+    "example": "The enterprise plans to renovate its customer reception lobby into a collaborative lounge.",
+    "exampleZh": "該企業計畫將客戶接待大廳全面翻新整修為開放式的協同交流休憩區。"
+  },
+  {
+    "id": 133,
+    "word": "replenish",
+    "phonetic": "/rɪˈplen.ɪʃ/",
+    "partOfSpeech": "verb",
+    "meaning": "補充耗材、補足存貨",
+    "example": "Automated order monitors alert suppliers whenever it is time to replenish warehouse stocks.",
+    "exampleZh": "自動化訂單監控模組會在倉儲庫存需要補貨時，即時發出警訊通知供應商。"
+  },
+  {
+    "id": 134,
+    "word": "reputable",
+    "phonetic": "/ˈrep.jə.t̬ə.bəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "聲譽良好的、值得信賴的",
+    "example": "We partnered with a reputable cybersecurity auditor to conduct our third-party penetration test.",
+    "exampleZh": "我們與一家信譽卓越的資安顧問機構合作，進行第三方的系統滲透測試。"
+  },
+  {
+    "id": 135,
+    "word": "requisition",
+    "phonetic": "/ˌrek.wəˈzɪʃ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "正式物資請購單；請購申請",
+    "example": "Department leads must submit a formal purchase requisition for any hardware over $500.",
+    "exampleZh": "部門負責人針對任何超過五百美元的硬體採購均須送出正式的採購請購單。"
+  },
+  {
+    "id": 136,
+    "word": "rescind",
+    "phonetic": "/rɪˈsɪnd/",
+    "partOfSpeech": "verb",
+    "meaning": "廢止、撤銷（決定或合約協議）",
+    "example": "The executive committee decided to rescind the policy directive after employee feedback.",
+    "exampleZh": "在彙整同仁意見回饋後，執行委員會決定正式撤銷這項行政指導原則。"
+  },
+  {
+    "id": 137,
+    "word": "resilience",
+    "phonetic": "/rɪˈzɪl.jəns/",
+    "partOfSpeech": "noun",
+    "meaning": "復原力、韌性適應力",
+    "example": "The logistics operation showed great resilience during severe winter weather disruptions.",
+    "exampleZh": "這套物流運作系統在遭遇嚴峻暴風雪天候侵襲時，展現了強大的復原適應力。"
+  },
+  {
+    "id": 138,
+    "word": "resolution",
+    "phonetic": "/ˌrez.əˈluː.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "決議案；問題化解",
+    "example": "The shareholders voted overwhelmingly in favor of the annual dividend payout resolution.",
+    "exampleZh": "全體股東以壓倒性票數表決通過了年度股息配發的決議案。"
+  },
+  {
+    "id": 139,
+    "word": "restructure",
+    "phonetic": "/ˌriːˈstrʌk.tʃɚ/",
+    "partOfSpeech": "verb",
+    "meaning": "改組、重整（組織架構）",
+    "example": "The corporation plans to restructure its regional operations to improve agile delivery.",
+    "exampleZh": "該企業計畫重整其區域營運架構，以大幅提高敏捷交付能力。"
+  },
+  {
+    "id": 140,
+    "word": "retain",
+    "phonetic": "/rɪˈteɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "挽留留用（核心人才）；保留",
+    "example": "Offering competitive benefits and flexible schedules helps the company retain top talent.",
+    "exampleZh": "提供具競爭力的福利與彈性工時有助於公司長久挽留住頂尖關鍵人才。"
+  },
+  {
+    "id": 141,
+    "word": "retention",
+    "phonetic": "/rɪˈten.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "客戶留存率；員工留任率",
+    "example": "Providing proactive customer onboarding led to a measurable increase in subscriber retention.",
+    "exampleZh": "提供積極主動的新戶引導服務，促使付費會員留存率獲得了可觀的成長。"
+  },
+  {
+    "id": 142,
+    "word": "retrieve",
+    "phonetic": "/rɪˈtriːv/",
+    "partOfSpeech": "verb",
+    "meaning": "檢索取出、調取（資料檔案）",
+    "example": "The upgraded search portal allows client service representatives to retrieve order records instantly.",
+    "exampleZh": "升級後的搜尋介面讓客服專員能夠在一秒之內立即調取歷史訂單記錄。"
+  },
+  {
+    "id": 143,
+    "word": "revenue",
+    "phonetic": "/ˈrev.ə.nuː/",
+    "partOfSpeech": "noun",
+    "meaning": "營業總額、總營收",
+    "example": "Annual recurring subscription revenue reached an all-time record of eighty million dollars.",
+    "exampleZh": "年度經常性訂閱營業總額達到了八千萬美元的創紀錄歷史新高。"
+  },
+  {
+    "id": 144,
+    "word": "rigorous",
+    "phonetic": "/ˈrɪɡ.ɚ.əs/",
+    "partOfSpeech": "adjective",
+    "meaning": "嚴格周密的、嚴苛的（測試標準）",
+    "example": "The medical software underwent rigorous regulatory safety trials prior to release.",
+    "exampleZh": "這套醫療軟體在正式發表問世前，經歷了極為嚴密且嚴苛的法規安全測試。"
+  },
+  {
+    "id": 145,
+    "word": "robust",
+    "phonetic": "/roʊˈbʌst/",
+    "partOfSpeech": "adjective",
+    "meaning": "穩固健全的、強韌耐用的（系統或財務）",
+    "example": "Our IT infrastructure relies on a robust server network with redundant power backups.",
+    "exampleZh": "我們的資訊基礎架構建立在配備多重備援電力的穩固強大伺服器網路之上。"
+  },
+  {
+    "id": 146,
+    "word": "saturate",
+    "phonetic": "/ˈsætʃ.ə.reɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "使市場飽和、滲透透頂",
+    "example": "Domestic smartphone manufacturers must expand abroad as local markets saturate.",
+    "exampleZh": "隨著國內市場已呈現全面飽和狀態，本國智慧型手機廠商必須全力佈局海外市場。"
+  },
+  {
+    "id": 147,
+    "word": "scrutiny",
+    "phonetic": "/ˈskruː.t̬ən.i/",
+    "partOfSpeech": "noun",
+    "meaning": "細緻嚴格的檢視審查 (under scrutiny)",
+    "example": "The proposed international merger has come under intense regulatory scrutiny.",
+    "exampleZh": "這項擬議中的跨國企業合併案已受到各國監管機構極為嚴格的細緻審查。"
+  },
+  {
+    "id": 148,
+    "word": "seamless",
+    "phonetic": "/ˈsiːm.ləs/",
+    "partOfSpeech": "adjective",
+    "meaning": "順暢無縫的（整合銜接或用戶體驗）",
+    "example": "The cross-platform update provides users with a seamless synchronization experience.",
+    "exampleZh": "這項跨平台更新為廣大使用者提供了順暢無縫的即時資料同步體驗。"
+  },
+  {
+    "id": 149,
+    "word": "sector",
+    "phonetic": "/ˈsek.tɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "產業部門、經濟特定領域",
+    "example": "Government investments sparked rapid growth throughout the renewable clean energy sector.",
+    "exampleZh": "政府的大力投資帶動了整個再生綠色能源產業領域的突飛猛進。"
+  },
+  {
+    "id": 150,
+    "word": "segment",
+    "phonetic": "/ˈseɡ.mənt/",
+    "partOfSpeech": "noun",
+    "meaning": "市場區隔客群、部分區塊",
+    "example": "Tech-savvy remote workers represent our company's fastest-growing consumer segment.",
+    "exampleZh": "熟悉科技應用的遠距工作族群代表了本公司成長速度最迅猛的消費客群板塊。"
+  }
+]

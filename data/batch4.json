@@ -1,0 +1,452 @@
+[
+  {
+    "id": 151,
+    "word": "severance",
+    "phonetic": "/ˈsev.ɚ.əns/",
+    "partOfSpeech": "noun",
+    "meaning": "資遣費、解雇補償金",
+    "example": "Employees affected by the restructuring were offered a generous severance and outplacement package.",
+    "exampleZh": "受組織重組波及的員工均獲得了優渥的資遣補償與職涯轉職轉銜輔導方案。"
+  },
+  {
+    "id": 152,
+    "word": "shortage",
+    "phonetic": "/ˈʃɔːr.t̬ɪdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "短缺匮乏、不足之虞",
+    "example": "A temporary global freight container shortage created delivery bottlenecks during the holidays.",
+    "exampleZh": "暫時性的全球貨運貨櫃短缺在節慶期間造成了貨品送達的物流瓶頸。"
+  },
+  {
+    "id": 153,
+    "word": "simultaneous",
+    "phonetic": "/ˌsaɪ.məlˈteɪ.ni.əs/",
+    "partOfSpeech": "adjective",
+    "meaning": "同步的、同時發生的",
+    "example": "The global developer conference featured simultaneous translation into four languages.",
+    "exampleZh": "該場全球開發者大會提供了四種主要語言的即時同步口譯服務。"
+  },
+  {
+    "id": 154,
+    "word": "soar",
+    "phonetic": "/sɔːr/",
+    "partOfSpeech": "verb",
+    "meaning": "飆升、急遽猛增（股價或銷量）",
+    "example": "Quarterly profits began to soar immediately following the rollout of our enterprise cloud model.",
+    "exampleZh": "在我們推行企業級雲端商業模式之後，季度獲利表現隨即開始大幅飆升。"
+  },
+  {
+    "id": 155,
+    "word": "solvency",
+    "phonetic": "/ˈsɑːl.vən.si/",
+    "partOfSpeech": "noun",
+    "meaning": "償債能力、資金清償充裕度",
+    "example": "Independent financial stress testing verified the international commercial bank's solvency.",
+    "exampleZh": "獨立的金融壓力測試充分驗證了該跨國商業銀行健全充沛的長期償債能力。"
+  },
+  {
+    "id": 156,
+    "word": "specifications",
+    "phonetic": "/ˌspes.ə.fəˈkeɪ.ʃənz/",
+    "partOfSpeech": "noun",
+    "meaning": "工程規格、詳細標準技術規範",
+    "example": "All hardware deliveries must strictly conform to the lead architect's design specifications.",
+    "exampleZh": "所有交付的硬體設備均必須嚴格符合首席架構師所訂定的設計技術規範。"
+  },
+  {
+    "id": 157,
+    "word": "stagnant",
+    "phonetic": "/ˈstæɡ.nənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "停滯不前的、沉寂不景氣的",
+    "example": "Management revamped the marketing outreach after seeing stagnant sales in traditional sectors.",
+    "exampleZh": "在注意到傳統市場板塊銷售陷入停滯不前之後，管理層全面改造了行銷推廣策略。"
+  },
+  {
+    "id": 158,
+    "word": "stakeholder",
+    "phonetic": "/ˈsteɪkˌhoʊl.dɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "利害關係人、相關權益各方",
+    "example": "The executive director presented the corporate sustainability roadmap to internal stakeholders.",
+    "exampleZh": "執行董事向企業內部相關利害關係人詳細介紹了公司的永續發展路線圖。"
+  },
+  {
+    "id": 159,
+    "word": "standardize",
+    "phonetic": "/ˈstæn.dɚ.daɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "使標準化、統一規範作業流程",
+    "example": "The enterprise aims to standardize procurement documentation across all global subsidiaries.",
+    "exampleZh": "該跨國企業旨在統一標準化全球所有子公司所使用的採購合約文書範本。"
+  },
+  {
+    "id": 160,
+    "word": "stimulate",
+    "phonetic": "/ˈstɪm.jə.leɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "刺激、激勵帶動（市場需求）",
+    "example": "Offering promotional trial credits helped stimulate customer demand for the new analytics tool.",
+    "exampleZh": "推出限時試用抵用點數成功刺激帶動了客戶對這套全新分析工具的強勁需求。"
+  },
+  {
+    "id": 161,
+    "word": "strategic",
+    "phonetic": "/strəˈtiː.dʒɪk/",
+    "partOfSpeech": "adjective",
+    "meaning": "具策略性的、核心戰略的",
+    "example": "Forming a strategic alliance with regional cloud partners opened new distribution channels.",
+    "exampleZh": "與區域雲端夥伴結成策略聯盟為公司開闢了全新的產品通路分銷網絡。"
+  },
+  {
+    "id": 162,
+    "word": "subcontractor",
+    "phonetic": "/ˈsʌbˌkɑːn.træk.tɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "分包商、協力外包廠商",
+    "example": "The prime construction contractor hired a specialized subcontractor to install network cables.",
+    "exampleZh": "建築總承包商聘請了一家專業的工程協力廠商負責安裝全棟網路纜線。"
+  },
+  {
+    "id": 163,
+    "word": "subordinate",
+    "phonetic": "/səˈbɔːr.dən.ət/",
+    "partOfSpeech": "noun",
+    "meaning": "部屬、下屬工作同仁",
+    "example": "A considerate department manager provides clear direction and mentorship to each subordinate.",
+    "exampleZh": "一位體貼稱職的部門經理會向每位部屬同仁提供清晰明確的指導方針與經驗傳承。"
+  },
+  {
+    "id": 164,
+    "word": "subsidiary",
+    "phonetic": "/səbˈsɪd.i.er.i/",
+    "partOfSpeech": "noun",
+    "meaning": "子公司、附屬關係企業",
+    "example": "The multinational conglomerate opened a wholly-owned logistics subsidiary in Singapore.",
+    "exampleZh": "這家跨國大型企業集團在新加坡正式設立了一家獨資的物流子公司據點。"
+  },
+  {
+    "id": 165,
+    "word": "subsidy",
+    "phonetic": "/ˈsʌb.sə.di/",
+    "partOfSpeech": "noun",
+    "meaning": "政府補貼款、政策性津貼",
+    "example": "Electric delivery vehicle fleets qualify for a municipal clean transportation subsidy.",
+    "exampleZh": "純電動物流貨車車隊符合請領市政府綠色清潔運輸政策補貼的資格。"
+  },
+  {
+    "id": 166,
+    "word": "substitute",
+    "phonetic": "/ˈsʌb.stə.tuːt/",
+    "partOfSpeech": "verb",
+    "meaning": "替代換用；替代品",
+    "example": "Engineers were able to substitute lightweight composite materials without sacrificing durability.",
+    "exampleZh": "工程師得以在不犧牲耐用度的前提下，換用更輕量化的複合材料進行生產。"
+  },
+  {
+    "id": 167,
+    "word": "supervise",
+    "phonetic": "/ˈsuː.pɚ.vaɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "監督指導、監管督導",
+    "example": "The senior developer will supervise interns throughout their three-month engineering practicum.",
+    "exampleZh": "資深工程師將在實習生為期三個月的工程實務訓練期間全程提供指導與督導。"
+  },
+  {
+    "id": 168,
+    "word": "supplement",
+    "phonetic": "/ˈsʌp.lə.ment/",
+    "partOfSpeech": "verb",
+    "meaning": "增補、補充補足（資源預算）",
+    "example": "The department was authorized to supplement its operational budget to recruit extra contractors.",
+    "exampleZh": "該部門已獲准擴充增補營運預算，以聘用額外的大型專案外包人員。"
+  },
+  {
+    "id": 169,
+    "word": "surge",
+    "phonetic": "/sɝːdʒ/",
+    "partOfSpeech": "noun",
+    "meaning": "急遽暴增、大量湧現（訂單或流量）",
+    "example": "The e-commerce platform successfully handled an unprecedented traffic surge on Black Friday.",
+    "exampleZh": "該電子商務平台在黑色星期五當天成功承受住了史無前例的造訪流量暴增衝擊。"
+  },
+  {
+    "id": 170,
+    "word": "surpass",
+    "phonetic": "/sɚˈpæs/",
+    "partOfSpeech": "verb",
+    "meaning": "超越、超出（預期目標或對手）",
+    "example": "Our overseas quarterly export volume surpassed all internal conservative projections.",
+    "exampleZh": "我們本季度的海外出口總量全面超越了內部原先最保守的各項預期估計值。"
+  },
+  {
+    "id": 171,
+    "word": "suspend",
+    "phonetic": "/səˈspend/",
+    "partOfSpeech": "verb",
+    "meaning": "暫時中止、暫緩執行",
+    "example": "Trading operations were temporarily suspended while the exchange investigated erratic market data.",
+    "exampleZh": "在交易所調查異常市場行情報價數據期間，所有線上交易作業暫時中止。"
+  },
+  {
+    "id": 172,
+    "word": "sustain",
+    "phonetic": "/səˈsteɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "持續支撐、維持穩定發展",
+    "example": "The software startup must manage cash burn prudently to sustain operations before series B funding.",
+    "exampleZh": "這家軟體新創公司必須審慎控管現金消耗率，以在完成B輪融資前維持穩健營運。"
+  },
+  {
+    "id": 173,
+    "word": "swift",
+    "phonetic": "/swɪft/",
+    "partOfSpeech": "adjective",
+    "meaning": "迅速敏捷的、立刻及時的",
+    "example": "The incident team earned client trust through their swift resolution of the network outage.",
+    "exampleZh": "資安應變小組透過迅速果決解決網路斷線事故，贏得了企業客戶的深厚信任。"
+  },
+  {
+    "id": 174,
+    "word": "synergy",
+    "phonetic": "/ˈsɪn.ɚ.dʒi/",
+    "partOfSpeech": "noun",
+    "meaning": "綜效、團隊協同互乘效益",
+    "example": "The joint cross-divisional venture created valuable operational synergy across product lines.",
+    "exampleZh": "這場跨事業部的聯合專案在各產品線之間創造了極具商業價值的營運協同綜效。"
+  },
+  {
+    "id": 175,
+    "word": "tactics",
+    "phonetic": "/ˈtæk.tɪks/",
+    "partOfSpeech": "noun",
+    "meaning": "策略戰術、應對具體手段",
+    "example": "The growth team adjusted its digital advertising tactics to boost mobile app conversions.",
+    "exampleZh": "成長營運團隊及時微調了數位廣告投放戰術，以全面拉升行動裝置的轉換率。"
+  },
+  {
+    "id": 176,
+    "word": "tangible",
+    "phonetic": "/ˈtæn.dʒə.bəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "實質有形的、具體可衡量的（效益或成果）",
+    "example": "The workflow overhaul delivered tangible cost savings within the initial two months.",
+    "exampleZh": "這套工作流程的徹底革新在實施最初兩個月內便繳出了具體有感且可衡量的成本節省。"
+  },
+  {
+    "id": 177,
+    "word": "tariff",
+    "phonetic": "/ˈter.ɪf/",
+    "partOfSpeech": "noun",
+    "meaning": "進口關稅、海關稅率",
+    "example": "Higher international tariffs on raw aluminum forced automotive suppliers to revise quotes.",
+    "exampleZh": "針對進口原鋁加徵的海外關稅迫使汽車零組件供應商不得不重新檢討報價單。"
+  },
+  {
+    "id": 178,
+    "word": "tedious",
+    "phonetic": "/ˈtiː.di.əs/",
+    "partOfSpeech": "adjective",
+    "meaning": "冗長繁瑣的、耗時單調的",
+    "example": "Automating manual payroll calculations eliminated a tedious multi-day administrative chore.",
+    "exampleZh": "將人工計算薪資作業自動化，徹底消除了一項繁瑣耗時且需耗費數天的行政苦差事。"
+  },
+  {
+    "id": 179,
+    "word": "tenure",
+    "phonetic": "/ˈten.jɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "任期、長期在職服務年資",
+    "example": "During her seven-year tenure as chief operating officer, company enterprise value tripled.",
+    "exampleZh": "在她擔任營運長職位的七年任期之內，公司的整體企業市值成長了整整三倍。"
+  },
+  {
+    "id": 180,
+    "word": "terminate",
+    "phonetic": "/ˈtɝː.mə.neɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "終止、提前解除（合約協議）",
+    "example": "Either party may terminate the licensing agreement by providing thirty days written notice.",
+    "exampleZh": "任何一方均可在提前三十天以書面形式正式發出通知後，隨時解約終止授權合約。"
+  },
+  {
+    "id": 181,
+    "word": "testimonial",
+    "phonetic": "/ˌtes.təˈmoʊ.ni.əl/",
+    "partOfSpeech": "noun",
+    "meaning": "顧客見證推薦、真實好評推薦心得",
+    "example": "Compelling video testimonials from Fortune 500 partners were spotlighted on our site.",
+    "exampleZh": "來自財富五百大合作夥伴的極具說服力推薦見證短片，被重點刊登於我們官網首頁。"
+  },
+  {
+    "id": 182,
+    "word": "thrive",
+    "phonetic": "/θraɪv/",
+    "partOfSpeech": "verb",
+    "meaning": "繁榮昌盛、欣欣向榮茁壯發展",
+    "example": "Companies that embrace data-driven agility continue to thrive in competitive markets.",
+    "exampleZh": "積極擁抱數據導向與敏捷變革的企業，在白熱化的競爭市場中持續茁壯蓬勃發展。"
+  },
+  {
+    "id": 183,
+    "word": "traction",
+    "phonetic": "/ˈtræk.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "市場關注動能、推廣拉力 (gain traction)",
+    "example": "The enterprise productivity platform began to gain significant traction among healthcare firms.",
+    "exampleZh": "該企業生產力平台開始在醫療院所與保健產業領域中取得顯著的推廣進展與市場關注。"
+  },
+  {
+    "id": 184,
+    "word": "transaction",
+    "phonetic": "/trænˈzæk.ʃən/",
+    "partOfSpeech": "noun",
+    "meaning": "商務交易、金流款項往來記錄",
+    "example": "Every payment transaction is safeguarded by end-to-end encryption to prevent fraud.",
+    "exampleZh": "每筆支付交易紀錄均受到端對端高強度加密機制的嚴密保護，以嚴防偽冒詐欺。"
+  },
+  {
+    "id": 185,
+    "word": "transform",
+    "phonetic": "/trænˈsfɔːrm/",
+    "partOfSpeech": "verb",
+    "meaning": "徹底轉型改觀、全面變革",
+    "example": "The newly appointed CEO intends to transform the legacy retailer into an e-commerce powerhouse.",
+    "exampleZh": "新上任的執行長立志將這家傳統老牌零售通路商，徹底轉型為電商領域的領頭羊。"
+  },
+  {
+    "id": 186,
+    "word": "transition",
+    "phonetic": "/trænˈzɪʃ.ən/",
+    "partOfSpeech": "noun",
+    "meaning": "轉型過渡期；平順轉換",
+    "example": "Dedicated training sessions guaranteed a smooth transition to the upgraded cloud ERP software.",
+    "exampleZh": "專門安排的內部訓練課程確保了全體同仁平順銜接轉換至新版雲端ERP系統。"
+  },
+  {
+    "id": 187,
+    "word": "transparency",
+    "phonetic": "/trænˈsper.ən.si/",
+    "partOfSpeech": "noun",
+    "meaning": "資訊透明度、公開坦率性",
+    "example": "Corporate governance standards mandate complete financial transparency during investor audits.",
+    "exampleZh": "公司治理標準嚴格強制要求在面對投資人查帳審計時必須展現百分之百的財務透明度。"
+  },
+  {
+    "id": 188,
+    "word": "turnover",
+    "phonetic": "/ˈtɝːnˌoʊ.vɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "營業額；人事離職率",
+    "example": "Fostering career development pathways reduced staff turnover by twenty-five percent.",
+    "exampleZh": "健全規劃員工職涯發展階梯，成功讓團隊的人員離職流動率大幅降低了百分之二十五。"
+  },
+  {
+    "id": 189,
+    "word": "unanimous",
+    "phonetic": "/juːˈnæn.ə.məs/",
+    "partOfSpeech": "adjective",
+    "meaning": "全體一致認同的、無異議表決通過的",
+    "example": "The nomination committee reached a unanimous decision to promote Mr. Vance to director.",
+    "exampleZh": "遴選提名委員會達成了一致無異議的共識，決定將范斯先生拔擢晉升為部門總監。"
+  },
+  {
+    "id": 190,
+    "word": "undermine",
+    "phonetic": "/ˌʌn.dɚˈmaɪn/",
+    "partOfSpeech": "verb",
+    "meaning": "削弱動搖、暗中損害（權威或公信力）",
+    "example": "Unverified rumors in the press could undermine stakeholder confidence in the merger.",
+    "exampleZh": "媒體上未經查證的揣測謠言可能會嚴重動搖並削弱利害關係人對該合併案的信心。"
+  },
+  {
+    "id": 191,
+    "word": "undertake",
+    "phonetic": "/ˌʌn.dɚˈteɪk/",
+    "partOfSpeech": "verb",
+    "meaning": "著手承擔、著手進行（龐大專案工程）",
+    "example": "Our specialized consulting practice was engaged to undertake the nationwide logistics review.",
+    "exampleZh": "我們的專業顧問團隊受聘全權著手承擔並執行這項全國性的物流網絡總體檢專案。"
+  },
+  {
+    "id": 192,
+    "word": "undervalue",
+    "phonetic": "/ˌʌn.dɚˈvæl.juː/",
+    "partOfSpeech": "verb",
+    "meaning": "低估…的價值與重要性",
+    "example": "Market analysts argue that financial investors consistently undervalue the company's patent portfolio.",
+    "exampleZh": "市場資深分析師指出，金融投資界長期以來普遍低估了該公司龐大專利組合的真實價值。"
+  },
+  {
+    "id": 193,
+    "word": "unforeseen",
+    "phonetic": "/ˌʌn.fɔːrˈsiːn/",
+    "partOfSpeech": "adjective",
+    "meaning": "預料之外的、始料未及的（突發狀況）",
+    "example": "The contingency budget covers any unforeseen expenses that arise during software deployment.",
+    "exampleZh": "專案緊急備用金是專門用以支應系統部署上線期間可能冒出的任何始料未及額外開銷。"
+  },
+  {
+    "id": 194,
+    "word": "upgrade",
+    "phonetic": "/ʌpˈɡreɪd/",
+    "partOfSpeech": "verb",
+    "meaning": "升級、提升設備等級",
+    "example": "The facility will upgrade its backup generator units to safeguard against power grid outages.",
+    "exampleZh": "該廠區將全面升級其備用柴油發電機組，以因應防範外部電網斷電事故。"
+  },
+  {
+    "id": 195,
+    "word": "utilize",
+    "phonetic": "/ˈjuː.t̬əl.aɪz/",
+    "partOfSpeech": "verb",
+    "meaning": "充分利用、有效運用（資源數據）",
+    "example": "Our engineering department will utilize machine learning models to identify system anomalies.",
+    "exampleZh": "我們的工程技術部門將充分利用機器學習模型，以即時識別系統中發生的各項異常事件。"
+  },
+  {
+    "id": 196,
+    "word": "vacant",
+    "phonetic": "/ˈveɪ.kənt/",
+    "partOfSpeech": "adjective",
+    "meaning": "職位空缺的；閒置未租賃的",
+    "example": "Human resources placed job advertisements to fill several vacant senior developer positions.",
+    "exampleZh": "人資部門在各大求職平台刊登招聘廣告，以填補目前空缺的數個資深開發人員職缺。"
+  },
+  {
+    "id": 197,
+    "word": "validate",
+    "phonetic": "/ˈvæl.ə.deɪt/",
+    "partOfSpeech": "verb",
+    "meaning": "驗證確認有效性、核可檢驗",
+    "example": "Quality assurance testing will validate that the mobile app complies with security standards.",
+    "exampleZh": "品管測試工程師將會驗證確認該款行動應用程式是否完全符合各項資安合規標準。"
+  },
+  {
+    "id": 198,
+    "word": "vendor",
+    "phonetic": "/ˈven.dɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "供應商、委外承包合作廠商",
+    "example": "Our procurement committee selected a certified cloud vendor based on service reliability.",
+    "exampleZh": "我們的採購委員會依據服務的高穩定度與可靠性，遴選出了一家認證雲端供應商合作。"
+  },
+  {
+    "id": 199,
+    "word": "venture",
+    "phonetic": "/ˈven.tʃɚ/",
+    "partOfSpeech": "noun",
+    "meaning": "商業投資專案、合資創業事業",
+    "example": "The joint technology development venture yielded multiple valuable patents within two years.",
+    "exampleZh": "這項聯合技術研發合資專案在短短兩年時間內便產出了數項價值連城的專利發明。"
+  },
+  {
+    "id": 200,
+    "word": "viable",
+    "phonetic": "/ˈvaɪ.ə.bəl/",
+    "partOfSpeech": "adjective",
+    "meaning": "具備商業可行性的、能長遠維繫的",
+    "example": "The feasibility assessment confirmed that the solar expansion plan represents a viable investment.",
+    "exampleZh": "可行性研究報告確認這項太陽能廠擴建規劃案是一項具備高度商業可行性的投資。"
+  }
+]
