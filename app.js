@@ -704,3 +704,17 @@ if (window.TOEIC_WORDS && Array.isArray(window.TOEIC_WORDS) && window.TOEIC_WORD
       console.warn('Could not fetch words.json, using fallback:', err);
     });
 }
+
+// 註冊 PWA Service Worker (支援手機離線存取)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then((reg) => {
+        console.log('[PWA] Service Worker registered with scope:', reg.scope);
+      })
+      .catch((err) => {
+        console.warn('[PWA] Service Worker registration failed:', err);
+      });
+  });
+}
+

@@ -54,10 +54,11 @@ body {
   background-color: var(--slate-50);
   color: var(--slate-900);
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 16px;
+  padding: max(24px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom)) 16px;
   line-height: 1.5;
   font-size: 16px; /* 基礎字級提升 */
 }
