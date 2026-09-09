@@ -47,6 +47,7 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation; /* 徹底杜絕 iOS 雙擊放大與點擊延遲 */
 }
 
 html, body {
@@ -669,9 +670,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem; /* 從 0.75rem 提升至 0.9rem */
+  font-size: 0.9rem;
   color: var(--slate-400);
   margin-top: 4px;
+}
+
+/* 判斷裝置：手機、平板及所有觸控設備完全隱藏鍵盤快捷鍵說明 */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+  .shortcut-hints {
+    display: none !important;
+  }
 }
 
 .hint-dot {
@@ -1113,24 +1121,42 @@ body {
     line-height: 1.45;
   }
 
-  /* 底部操作欄按鈕尺寸自適應，左右箭頭縮小，騰出空間給評分按鈕 */
+  /* 底部操作欄：箭頭加大方便拇指觸控，防止誤觸雙擊放大 */
   .dock-row {
-    gap: 6px;
+    gap: 8px;
   }
 
   .nav-arrow-btn {
-    width: 44px;
-    height: 48px;
-    font-size: 1.25rem;
+    width: 50px;
+    min-width: 50px;
+    height: 52px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
     border-radius: 12px;
+    background: var(--slate-100);
+    border: 1px solid var(--slate-200);
+    color: var(--slate-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .nav-arrow-btn:active:not(:disabled) {
+    background: var(--slate-200);
+    transform: scale(0.92);
   }
 
   .btn-primary-flip {
-    height: 48px;
-    font-size: 1rem;
-    padding: 0 10px;
+    height: 52px;
+    font-size: 1.05rem;
+    padding: 0 12px;
     border-radius: 12px;
     gap: 6px;
+    touch-action: manipulation;
   }
 
   .btn-primary-flip kbd {
@@ -1142,19 +1168,25 @@ body {
   }
 
   .rate-btn {
-    height: 48px;
+    height: 52px;
     padding: 2px 4px;
-    border-radius: 10px;
+    border-radius: 12px;
+    touch-action: manipulation;
   }
 
   .rate-title {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     white-space: nowrap;
     font-weight: 800;
   }
 
   .rate-sub {
     display: none; /* 隱藏次要副標題，讓三大評分按鈕乾淨並排 */
+  }
+
+  /* 手機版完全移除鍵盤快捷鍵說明列 */
+  .shortcut-hints {
+    display: none !important;
   }
 
   /* 統計頁面控制按鈕改為直排 */
@@ -1186,31 +1218,36 @@ body {
   }
 
   .dock-row {
-    gap: 4px;
+    gap: 5px;
   }
 
   .nav-arrow-btn {
-    width: 38px;
-    height: 44px;
-    font-size: 1.1rem;
+    width: 44px;
+    min-width: 44px;
+    height: 48px;
+    font-size: 1.5rem;
   }
 
   .btn-primary-flip {
-    height: 44px;
-    font-size: 0.92rem;
+    height: 48px;
+    font-size: 0.95rem;
   }
 
   .rate-btn {
-    height: 44px;
+    height: 48px;
     padding: 2px 2px;
   }
 
   .rate-title {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
   }
 
   .nav-pill {
     font-size: 0.85rem;
     padding: 6px 2px;
+  }
+
+  .shortcut-hints {
+    display: none !important;
   }
 }

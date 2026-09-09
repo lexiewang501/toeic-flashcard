@@ -556,8 +556,42 @@ function bindEvents() {
     });
   });
 
+  // 手機滑動切換卡片手勢支援 (Swipe to Switch Cards)
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let isSwiping = false;
+
+  dom.flashcard.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+    touchStartY = e.changedTouches[0].clientY;
+    isSwiping = false;
+  }, { passive: true });
+
+  dom.flashcard.addEventListener('touchmove', (e) => {
+    const currentX = e.changedTouches[0].clientX;
+    const currentY = e.changedTouches[0].clientY;
+    if (Math.abs(currentX - touchStartX) > 12 || Math.abs(currentY - touchStartY) > 12) {
+      isSwiping = true;
+    }
+  }, { passive: true });
+
+  dom.flashcard.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchEndY = e.changedTouches[0].clientY;
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+      if (diffX < 0) {
+        nextCard(); // 向左滑：下一題
+      } else {
+        prevCard(); // 向右滑：上一題
+      }
+    }
+  }, { passive: true });
+
   dom.flashcard.addEventListener('click', (e) => {
     if (e.target.closest('.ghost-icon-btn')) return;
+    if (isSwiping) return; // 滑動時不誤觸翻面
     flipCard();
   });
 
@@ -690,6 +724,13 @@ function bootstrapApp(loadedWords) {
   updateStatsDisplay();
   renderStarredList();
   bindEvents();
+
+  // 判斷裝置：若是手機/觸控螢幕/窄螢幕，從 DOM 完全移除鍵盤快捷鍵說明列
+  const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || window.matchMedia('(max-width: 768px)').matches;
+  if (isTouchDevice) {
+    const hints = document.querySelector('.shortcut-hints');
+    if (hints) hints.remove();
+  }
 }
 
 if (window.TOEIC_WORDS && Array.isArray(window.TOEIC_WORDS) && window.TOEIC_WORDS.length > 0) {
