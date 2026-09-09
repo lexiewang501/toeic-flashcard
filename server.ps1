@@ -31,6 +31,8 @@ try {
                 ".html" { $response.ContentType = "text/html; charset=utf-8" }
                 ".css"  { $response.ContentType = "text/css; charset=utf-8" }
                 ".js"   { $response.ContentType = "application/javascript; charset=utf-8" }
+                ".json" { $response.ContentType = "application/json; charset=utf-8" }
+                ".png"  { $response.ContentType = "image/png" }
                 default { $response.ContentType = "application/octet-stream" }
             }
             $response.ContentLength64 = $bytes.Length
