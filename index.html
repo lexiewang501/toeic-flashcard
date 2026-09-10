@@ -218,52 +218,64 @@
           <!-- 四大單字池長條圖 -->
           <div class="pools-container">
             
-            <div class="pool-row pool-row-unlearned">
+            <div class="pool-row pool-row-unlearned clickable-pool" data-pool="unlearned" title="點擊查看未學習單字清單">
               <div class="pool-row-info">
                 <div class="pool-label">
                   <span class="pool-indicator dot-unlearned"></span>
                   <span class="pool-text">未學習新字</span>
                 </div>
-                <span id="count-unlearned" class="pool-num">200</span>
+                <div class="pool-right-info">
+                  <span id="count-unlearned" class="pool-num">200</span>
+                  <span class="pool-chevron">›</span>
+                </div>
               </div>
               <div class="pool-bar-track">
                 <div id="bar-unlearned" class="pool-bar-fill fill-unlearned" style="width: 100%;"></div>
               </div>
             </div>
 
-            <div class="pool-row pool-row-hard">
+            <div class="pool-row pool-row-hard clickable-pool" data-pool="hard" title="點擊查看需要加強單字清單">
               <div class="pool-row-info">
                 <div class="pool-label">
                   <span class="pool-indicator dot-hard"></span>
                   <span class="pool-text">需要加強 (不熟)</span>
                 </div>
-                <span id="count-hard" class="pool-num">0</span>
+                <div class="pool-right-info">
+                  <span id="count-hard" class="pool-num">0</span>
+                  <span class="pool-chevron">›</span>
+                </div>
               </div>
               <div class="pool-bar-track">
                 <div id="bar-hard" class="pool-bar-fill fill-hard" style="width: 0%;"></div>
               </div>
             </div>
 
-            <div class="pool-row pool-row-review">
+            <div class="pool-row pool-row-review clickable-pool" data-pool="review" title="點擊查看定期複習單字清單">
               <div class="pool-row-info">
                 <div class="pool-label">
                   <span class="pool-indicator dot-review"></span>
                   <span class="pool-text">定期複習</span>
                 </div>
-                <span id="count-review" class="pool-num">0</span>
+                <div class="pool-right-info">
+                  <span id="count-review" class="pool-num">0</span>
+                  <span class="pool-chevron">›</span>
+                </div>
               </div>
               <div class="pool-bar-track">
                 <div id="bar-review" class="pool-bar-fill fill-review" style="width: 0%;"></div>
               </div>
             </div>
 
-            <div class="pool-row pool-row-mastered">
+            <div class="pool-row pool-row-mastered clickable-pool" data-pool="mastered" title="點擊查看已掌握單字清單">
               <div class="pool-row-info">
                 <div class="pool-label">
                   <span class="pool-indicator dot-mastered"></span>
                   <span class="pool-text">已掌握 (已畢業)</span>
                 </div>
-                <span id="count-mastered" class="pool-num">0</span>
+                <div class="pool-right-info">
+                  <span id="count-mastered" class="pool-num">0</span>
+                  <span class="pool-chevron">›</span>
+                </div>
               </div>
               <div class="pool-bar-track">
                 <div id="bar-mastered" class="pool-bar-fill fill-mastered" style="width: 0%;"></div>
@@ -298,6 +310,25 @@
         </div>
       </section>
 
+    </div>
+  </div>
+
+  <!-- 單字池清單詳情彈窗 (iOS 質感 Slide-up Sheet) -->
+  <div id="pool-modal-overlay" class="pool-modal-overlay hidden">
+    <div class="pool-modal-sheet" role="dialog" aria-modal="true">
+      <div class="pool-modal-drag-handle"></div>
+      <div class="pool-modal-header">
+        <div class="pool-modal-title-group">
+          <span id="pool-modal-dot" class="pool-indicator"></span>
+          <h3 id="pool-modal-title">需要加強 (0)</h3>
+        </div>
+        <button id="pool-modal-close" class="modal-close-btn" aria-label="關閉視窗">✕</button>
+      </div>
+      <p id="pool-modal-subtitle" class="pool-modal-subtitle">點擊 🔊 可朗讀發音，點擊 ⭐ 隨時加入生詞本</p>
+      
+      <div id="pool-modal-words-list" class="pool-modal-words-list">
+        <!-- 動態渲染單字列表 -->
+      </div>
     </div>
   </div>
 

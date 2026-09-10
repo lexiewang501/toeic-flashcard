@@ -97,7 +97,15 @@ const dom = {
 
   // 收藏清單
   starredCountLabel: document.getElementById('starred-count-label'),
-  starredList: document.getElementById('starred-list')
+  starredList: document.getElementById('starred-list'),
+
+  // 單字池詳情彈窗
+  poolModalOverlay: document.getElementById('pool-modal-overlay'),
+  poolModalTitle: document.getElementById('pool-modal-title'),
+  poolModalDot: document.getElementById('pool-modal-dot'),
+  poolModalWordsList: document.getElementById('pool-modal-words-list'),
+  poolModalClose: document.getElementById('pool-modal-close'),
+  clickablePools: document.querySelectorAll('.clickable-pool')
 };
 
 // ==========================================
@@ -535,6 +543,96 @@ function renderStarredList() {
 }
 
 // ==========================================
+// 5.5 單字池詳情清單彈窗 (Drill-down Modal)
+// ==========================================
+
+const POOL_CONFIG = {
+  [POOL_TYPES.UNLEARNED]: { name: '未學習新字', dotClass: 'dot-unlearned' },
+  [POOL_TYPES.HARD]: { name: '需要加強 (不熟)', dotClass: 'dot-hard' },
+  [POOL_TYPES.REVIEW]: { name: '定期複習', dotClass: 'dot-review' },
+  [POOL_TYPES.MASTERED]: { name: '已掌握 (已畢業)', dotClass: 'dot-mastered' }
+};
+
+function openPoolModal(poolType) {
+  if (!allWords || allWords.length === 0) return;
+  const config = POOL_CONFIG[poolType] || { name: '單字清單', dotClass: 'dot-unlearned' };
+
+  const wordsInPool = allWords.filter((w) => {
+    const s = wordStates[w.id]?.status || POOL_TYPES.UNLEARNED;
+    return s === poolType;
+  });
+
+  dom.poolModalTitle.textContent = `${config.name} (${wordsInPool.length})`;
+  dom.poolModalDot.className = `pool-indicator ${config.dotClass}`;
+
+  if (wordsInPool.length === 0) {
+    dom.poolModalWordsList.innerHTML = `
+      <div class="pool-empty-state">
+        <p>目前「${config.name}」分類中尚無任何單字。</p>
+      </div>
+    `;
+  } else {
+    dom.poolModalWordsList.innerHTML = wordsInPool
+      .map((w) => {
+        const state = getWordState(w.id);
+        const isStarred = !!state.starred;
+        const exampleEn = typeof w.example === 'object' ? w.example.en : (w.example || '');
+        const exampleZh = w.exampleZh || (typeof w.example === 'object' ? w.example.zh : '');
+        const escapedWord = w.word.replace(/'/g, "\\'");
+
+        return `
+          <div class="pool-word-item" id="pool-item-${w.id}">
+            <div class="pool-word-header">
+              <div class="pool-word-title-group">
+                <span class="pool-word-spelling">${w.word}</span>
+                <span class="pool-word-meta">${w.phonetic || ''} · ${w.partOfSpeech || ''}</span>
+              </div>
+              <div class="pool-word-actions">
+                <button class="ghost-icon-btn" onclick="speakWord('${escapedWord}')" title="朗讀發音">🔊</button>
+                <button class="ghost-icon-btn star-btn ${isStarred ? 'active' : ''}" id="modal-star-${w.id}" onclick="handleModalStarToggle(${w.id})" title="${isStarred ? '取消收藏' : '加入收藏'}">${isStarred ? '⭐' : '☆'}</button>
+              </div>
+            </div>
+            <div class="pool-word-meaning">${w.meaning}</div>
+            ${exampleEn ? `
+              <div class="pool-word-example">
+                <div class="pool-example-en">${exampleEn}</div>
+                ${exampleZh ? `<div class="pool-example-zh">${exampleZh}</div>` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      })
+      .join('');
+  }
+
+  dom.poolModalOverlay.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePoolModal() {
+  dom.poolModalOverlay.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function handleModalStarToggle(wordId) {
+  toggleWordStar(wordId);
+  const starBtn = document.getElementById(`modal-star-${wordId}`);
+  if (starBtn) {
+    const isStarred = !!wordStates[wordId]?.starred;
+    starBtn.textContent = isStarred ? '⭐' : '☆';
+    starBtn.classList.toggle('active', isStarred);
+    starBtn.title = isStarred ? '取消收藏' : '加入收藏';
+  }
+}
+
+// 暴露全域輔助函式供動態 HTML 點擊呼叫
+window.speakWord = speakWord;
+window.toggleWordStar = toggleWordStar;
+window.handleModalStarToggle = handleModalStarToggle;
+window.openPoolModal = openPoolModal;
+window.closePoolModal = closePoolModal;
+
+// ==========================================
 // 6. 事件監聽綁定
 // ==========================================
 
@@ -685,8 +783,35 @@ function bindEvents() {
     }
   });
 
+  // 統計頁點擊單字池查看詳情清單
+  if (dom.clickablePools) {
+    dom.clickablePools.forEach((row) => {
+      row.addEventListener('click', () => {
+        const pool = row.dataset.pool;
+        if (pool) openPoolModal(pool);
+      });
+    });
+  }
+
+  // 關閉單字池清單彈窗
+  if (dom.poolModalClose) {
+    dom.poolModalClose.addEventListener('click', closePoolModal);
+  }
+  if (dom.poolModalOverlay) {
+    dom.poolModalOverlay.addEventListener('click', (e) => {
+      if (e.target === dom.poolModalOverlay) {
+        closePoolModal();
+      }
+    });
+  }
+
   window.addEventListener('keydown', (e) => {
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    if (e.key === 'Escape') {
+      closePoolModal();
+      return;
+    }
 
     if (e.code === 'Space') {
       e.preventDefault();
