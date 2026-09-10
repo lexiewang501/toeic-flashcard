@@ -1026,38 +1026,69 @@ body {
 
 .stats-controls-row {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  margin-top: 6px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .stats-controls-row {
+    flex-direction: row;
+    gap: 14px;
+  }
 }
 
 .btn-subtle {
-  flex: 1;
-  height: 48px;
-  border-radius: 12px;
-  border: 1px solid var(--slate-200);
-  background: #ffffff;
-  color: var(--slate-700);
+  width: 100%;
+  height: 56px;
+  border-radius: 14px;
+  border: 1.5px solid var(--slate-300);
+  background: var(--slate-100);
+  color: var(--slate-900);
   font-family: inherit;
-  font-size: 0.95rem; /* 放大按鈕文字 */
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
   transition: all 0.15s ease;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn-subtle:hover {
-  background: var(--slate-50);
-  border-color: var(--slate-300);
+  background: var(--slate-200);
+  border-color: var(--slate-400);
   color: var(--slate-900);
 }
 
+.btn-subtle:active {
+  background: var(--slate-300);
+  transform: scale(0.97);
+}
+
 .btn-subtle-danger {
+  background: #fef2f2;
+  border: 1.5px solid #fecaca;
   color: #b91c1c;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.05);
 }
 
 .btn-subtle-danger:hover {
-  background: #fef2f2;
+  background: #fee2e2;
   border-color: #fca5a5;
   color: #991b1b;
+}
+
+.btn-subtle-danger:active {
+  background: #fecaca;
+  transform: scale(0.97);
 }
 
 /* ==========================================================================
@@ -1289,10 +1320,17 @@ body {
     display: none !important;
   }
 
-  /* 統計頁面控制按鈕改為直排 */
+  /* 統計頁面控制按鈕大按鍵直排 */
   .stats-controls-row {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .btn-subtle {
+    height: 56px;
+    font-size: 1.12rem;
+    border-radius: 14px;
   }
 
   /* 完成卡片在手機上的排版 */
@@ -1344,6 +1382,11 @@ body {
 
   .rate-sub {
     display: none;
+  }
+
+  .btn-subtle {
+    height: 52px;
+    font-size: 1.02rem;
   }
 
   .nav-pill {
