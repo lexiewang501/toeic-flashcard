@@ -55,7 +55,7 @@
         </div>
 
         <!-- 3D 單字卡主體 -->
-        <div class="card-scene">
+        <div id="card-scene" class="card-scene">
           <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="點擊翻面">
             
             <!-- 卡片正面 (英文) -->
@@ -109,7 +109,7 @@
         </div>
 
         <!-- 評分操作區 (正下方整合式控制列) -->
-        <div class="action-dock">
+        <div id="action-dock" class="action-dock">
           
           <!-- 正面狀態操作列：翻面按鈕 + 左右大箭頭 -->
           <div id="dock-front" class="dock-row">
@@ -178,6 +178,9 @@
               </button>
               <button id="btn-goto-stats" class="btn-secondary-action">
                 📊 查看單字庫統計
+              </button>
+              <button id="btn-back-to-cards" class="btn-subtle-action">
+                ‹ 返回查看單字卡
               </button>
             </div>
           </div>

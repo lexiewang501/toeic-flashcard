@@ -34,11 +34,14 @@ const dom = {
   viewPanels: document.querySelectorAll('.view-panel'),
   
   // 測驗視圖
+  cardScene: document.getElementById('card-scene'),
   flashcard: document.getElementById('flashcard'),
+  actionDock: document.getElementById('action-dock'),
   sessionDateBadge: document.getElementById('session-date-badge'),
   cardCounter: document.getElementById('card-counter'),
   progressBarFill: document.getElementById('progress-bar-fill'),
   completionCard: document.getElementById('completion-card'),
+  btnBackToCards: document.getElementById('btn-back-to-cards'),
 
   // 卡片正面
   frontPoolBadge: document.getElementById('front-pool-badge'),
@@ -259,9 +262,9 @@ function initDailySession(forceNew = false) {
   }
 
   dom.sessionDateBadge.textContent = `${todaySession.date} 任務`;
-  currentIndex = todaySession.currentIndex || 0;
-  if (currentIndex >= todayWords.length && todayWords.length > 0) {
-    currentIndex = todayWords.length - 1;
+  currentIndex = todaySession.currentIndex !== undefined ? todaySession.currentIndex : 0;
+  if (currentIndex > todayWords.length && todayWords.length > 0) {
+    currentIndex = todayWords.length;
   }
 }
 
@@ -325,7 +328,11 @@ function renderCard(index) {
   }
 
   dom.completionCard.classList.add('hidden');
+  if (dom.cardScene) dom.cardScene.style.display = '';
+  if (dom.actionDock) dom.actionDock.style.display = '';
   dom.flashcard.style.display = 'block';
+  const hints = document.querySelector('.shortcut-hints');
+  if (hints) hints.style.display = '';
 
   const data = todayWords[index];
   const state = getWordState(data.id);
@@ -434,7 +441,12 @@ function handleGradeWord(status) {
 }
 
 function showCompletionCard() {
+  if (dom.cardScene) dom.cardScene.style.display = 'none';
+  if (dom.actionDock) dom.actionDock.style.display = 'none';
   dom.flashcard.style.display = 'none';
+  const hints = document.querySelector('.shortcut-hints');
+  if (hints) hints.style.display = 'none';
+
   dom.completionCard.classList.remove('hidden');
 
   let hardC = 0, reviewC = 0, masteredC = 0;
@@ -450,6 +462,9 @@ function showCompletionCard() {
   dom.sumMasteredCount.textContent = masteredC;
   dom.progressBarFill.style.width = '100%';
   dom.cardCounter.textContent = `${todayWords.length} / ${todayWords.length} 完成`;
+
+  todaySession.currentIndex = todayWords.length;
+  saveDailySession();
 }
 
 function speakWord(word) {
@@ -761,6 +776,13 @@ function bindEvents() {
   dom.btnGotoStats.addEventListener('click', () => {
     document.getElementById('tab-stats-btn').click();
   });
+
+  if (dom.btnBackToCards) {
+    dom.btnBackToCards.addEventListener('click', () => {
+      currentIndex = Math.max(0, todayWords.length - 1);
+      renderCard(currentIndex);
+    });
+  }
 
   dom.btnForceReroll.addEventListener('click', () => {
     if (confirm('確定要提前重新抽取今日 10 個單字嗎？')) {

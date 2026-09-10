@@ -761,16 +761,22 @@ body {
 
 .completion-card {
   width: 100%;
+  min-height: clamp(380px, 55vh, 460px);
   background: #ffffff;
   border-radius: var(--radius-card);
-  padding: 3rem 2rem;
+  padding: 2.2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: 1px solid var(--slate-200);
+  border: 1.5px solid var(--slate-200);
+  box-shadow: var(--shadow-card);
   animation: fadeIn 0.3s ease;
 }
 
 .completion-card.hidden {
-  display: none;
+  display: none !important;
 }
 
 @keyframes fadeIn {
@@ -896,6 +902,29 @@ body {
 .btn-secondary-action:hover {
   background: var(--slate-100);
   color: var(--slate-900);
+}
+
+.btn-subtle-action {
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: none;
+  color: var(--slate-500);
+  font-family: inherit;
+  font-size: 0.96rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+  touch-action: manipulation;
+  margin-top: 2px;
+}
+
+.btn-subtle-action:hover, .btn-subtle-action:active {
+  color: var(--slate-900);
+  text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -1370,14 +1399,61 @@ body {
     border-radius: 14px;
   }
 
-  /* 完成卡片在手機上的排版 */
+  /* 完成卡片在手機上的排版優化 */
+  .completion-card {
+    min-height: clamp(360px, 52vh, 440px);
+    padding: 1.6rem 1.1rem;
+    border-radius: 20px;
+  }
+
+  .completion-badge {
+    font-size: 0.82rem;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+  }
+
   .completion-inner h2 {
     font-size: 1.35rem;
+    margin-bottom: 6px;
+  }
+
+  .completion-desc {
+    font-size: 0.92rem;
+    margin-bottom: 16px;
+    line-height: 1.45;
   }
 
   .completion-summary-row {
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .summary-chip {
+    font-size: 0.88rem;
+    padding: 6px 14px;
+  }
+
+  .completion-buttons {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-primary-action {
+    height: 52px;
+    font-size: 1.05rem;
+    border-radius: 14px;
+  }
+
+  .btn-secondary-action {
+    height: 48px;
+    font-size: 0.98rem;
+    border-radius: 14px;
+  }
+
+  .btn-subtle-action {
+    height: 40px;
+    font-size: 0.92rem;
   }
 }
 
@@ -1433,6 +1509,30 @@ body {
 
   .shortcut-hints {
     display: none !important;
+  }
+
+  .completion-card {
+    padding: 1.2rem 0.8rem;
+    min-height: 330px;
+  }
+
+  .completion-inner h2 {
+    font-size: 1.2rem;
+  }
+
+  .completion-desc {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .btn-primary-action {
+    height: 48px;
+    font-size: 0.98rem;
+  }
+
+  .btn-secondary-action {
+    height: 44px;
+    font-size: 0.9rem;
   }
 }
 

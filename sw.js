@@ -1,5 +1,5 @@
 // TOEIC Master PWA Service Worker
-const CACHE_NAME = 'toeic-master-v6';
+const CACHE_NAME = 'toeic-master-v7';
 
 const PRECACHE_ASSETS = [
   './',
