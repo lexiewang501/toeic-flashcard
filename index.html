@@ -108,26 +108,19 @@
           </div>
         </div>
 
-        <!-- 評分操作區 (正下方整合式控制列) -->
+        <!-- 評分操作區 (正下方整合式控制列，正反面固定相同高度，徹底解決翻面跳動) -->
         <div id="action-dock" class="action-dock">
           
-          <!-- 正面狀態操作列：翻面按鈕 + 左右大箭頭 -->
-          <div id="dock-front" class="dock-row">
-            <button id="prev-btn" class="nav-arrow-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
-              ‹
-            </button>
+          <!-- 上排：狀態切換區 (正面：翻面按鈕 / 背面：三大評級按鈕，高度嚴格一致 56px) -->
+          <div class="dock-action-slot">
+            <!-- 正面動作：翻面按鈕 (全寬大按鍵) -->
             <button id="flip-btn" class="btn-primary-flip">
               <span>翻面看解釋</span>
               <kbd>Space</kbd>
             </button>
-            <button id="next-btn" class="nav-arrow-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
-              ›
-            </button>
-          </div>
 
-          <!-- 背面狀態評分列：三大評分按鈕 + 獨立導覽列 -->
-          <div id="dock-back" class="dock-back-group hidden">
-            <div class="rating-button-group">
+            <!-- 背面動作：三大評級按鈕群組 (高度嚴格一致 56px，無縫切換) -->
+            <div id="rating-button-group" class="rating-button-group hidden">
               <button id="grade-hard-btn" class="rate-btn rate-hard" title="歸入不熟池，未來高頻再次出現">
                 <span class="rate-dot dot-hard"></span>
                 <span class="rate-title">不熟</span>
@@ -144,14 +137,16 @@
                 <span class="rate-sub">永久畢業</span>
               </button>
             </div>
-            <div class="back-nav-row">
-              <button id="dock-back-prev-btn" class="nav-arrow-btn nav-wide-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
-                <span class="nav-arrow-symbol">‹</span> 上一題
-              </button>
-              <button id="dock-back-next-btn" class="nav-arrow-btn nav-wide-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
-                下一題 <span class="nav-arrow-symbol">›</span>
-              </button>
-            </div>
+          </div>
+
+          <!-- 下排：恆定導覽列 (上一題 / 下一題)，正反面位置、尺寸與高度 100% 固定不變！ -->
+          <div class="dock-nav-row">
+            <button id="prev-btn" class="nav-arrow-btn nav-wide-btn" title="上一題 (鍵盤 ←)" aria-label="上一題">
+              <span class="nav-arrow-symbol">‹</span> 上一題
+            </button>
+            <button id="next-btn" class="nav-arrow-btn nav-wide-btn" title="下一題 (鍵盤 →)" aria-label="下一題">
+              下一題 <span class="nav-arrow-symbol">›</span>
+            </button>
           </div>
 
         </div>

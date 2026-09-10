@@ -60,13 +60,10 @@ const dom = {
   backExampleZh: document.getElementById('back-example-zh'),
 
   // Action Dock 與評級控制列
-  dockFront: document.getElementById('dock-front'),
-  dockBack: document.getElementById('dock-back'),
+  flipBtn: document.getElementById('flip-btn'),
+  ratingButtonGroup: document.getElementById('rating-button-group'),
   prevBtn: document.getElementById('prev-btn'),
   nextBtn: document.getElementById('next-btn'),
-  flipBtn: document.getElementById('flip-btn'),
-  dockBackPrevBtn: document.getElementById('dock-back-prev-btn'),
-  dockBackNextBtn: document.getElementById('dock-back-next-btn'),
 
   // 評級按鈕
   gradeHardBtn: document.getElementById('grade-hard-btn'),
@@ -307,13 +304,13 @@ function renderStarButtons(isStarred) {
 }
 
 function updateActionDock(flipped) {
-  if (!dom.dockFront || !dom.dockBack) return;
+  if (!dom.flipBtn || !dom.ratingButtonGroup) return;
   if (flipped) {
-    dom.dockFront.classList.add('hidden');
-    dom.dockBack.classList.remove('hidden');
+    dom.flipBtn.classList.add('hidden');
+    dom.ratingButtonGroup.classList.remove('hidden');
   } else {
-    dom.dockFront.classList.remove('hidden');
-    dom.dockBack.classList.add('hidden');
+    dom.flipBtn.classList.remove('hidden');
+    dom.ratingButtonGroup.classList.add('hidden');
   }
 }
 
@@ -366,8 +363,6 @@ function renderCard(index) {
   const isLast = index === todayWords.length - 1;
   dom.prevBtn.disabled = isFirst;
   dom.nextBtn.disabled = isLast;
-  if (dom.dockBackPrevBtn) dom.dockBackPrevBtn.disabled = isFirst;
-  if (dom.dockBackNextBtn) dom.dockBackNextBtn.disabled = isLast;
 
   flipToFront();
 
@@ -723,9 +718,6 @@ function bindEvents() {
   dom.flipBtn.addEventListener('click', flipCard);
   dom.nextBtn.addEventListener('click', nextCard);
   dom.prevBtn.addEventListener('click', prevCard);
-
-  if (dom.dockBackNextBtn) dom.dockBackNextBtn.addEventListener('click', nextCard);
-  if (dom.dockBackPrevBtn) dom.dockBackPrevBtn.addEventListener('click', prevCard);
 
   dom.gradeHardBtn.addEventListener('click', (e) => {
     e.stopPropagation();
